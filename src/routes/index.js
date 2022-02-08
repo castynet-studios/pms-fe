@@ -1,4 +1,4 @@
-export const Routes = {
+export const ROUTES = {
   Home: "/",
   Dashboard: "/dashboard",
 
@@ -18,7 +18,7 @@ export const Routes = {
   AddPig: "/pigs/edit",
   NotFound: "/404",
 
-  SinglePig: (id = "id") => `/pigs/${id}`,
-  SingleEvent: (id = "id") => `/events/${id}`,
-  SingleProduct: (id = "id") => `/catalogue/${id}`,
+  SinglePig: (id = ":id") => `/pigs/id/${id}`,
+  SingleEvent: (id = ":id") => `/events/id/${id}`,
+  SingleProduct: (id = ":id") => `/catalogue/id/${id}`,
 };
