@@ -15,6 +15,7 @@ Alpha Preview
 3. Use the CSS variables in the `index.scss` for;
    1. Colors
    2. Border Radius
+   3. Fonts
 
 ### Opening a PR
 

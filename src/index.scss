@@ -3,6 +3,21 @@
 :root {
   --font: "Poppins", sans-serif;
   --headingFont: "Lato", sans-serif;
+  --borderRadius: 5px;
+  --borderRadiusLg: 10px;
+  --borderRadiusSm: 3px;
+  --lightBlue: #3ccece;
+  --lightGreen: #0b9673;
+  --darkGreen: #006f6f;
+  --lightGrey: #f5f4f7;
+  --grey: #c4c4c4;
+  --darkGrey: #777777;
+  --white: #ffffff;
+  --red: #ff6a6a;
+  --lightRed: #ff9797;
+  --yellow: #ffc700;
+  --lime: #c6d800;
+  --orange: #ff8a00;
 }
 
 * {
@@ -21,7 +36,7 @@ h6 {
 
 body {
   font-family: var(--font);
-  background-color: #f5f4f7;
+  background-color: var(--lightGrey);
 }
 
 button {
