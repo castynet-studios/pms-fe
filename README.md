@@ -10,7 +10,7 @@
 
 ## Development
 
-To start writing code create a new brach, name it based on the task eg. feature/login, bug/auth or feature/register
+To start writing code create a new branch, name it based on the task eg. feature/login, bug/auth or feature/register
 
 1. Use camelCase as the naming convention throughout the project, even for the filenames & folders
 2. Icons - use the icons in the elements
