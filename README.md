@@ -21,5 +21,5 @@ To start writing code create a new branch, name it based on the task eg. feature
 
 ### Opening a PR
 
-1. Make sure to mention the issue you were working on eg #1
+1. Make sure to mention the issue you were working on eg closes #1 or closes #3
 2. Make sure your branch does not have any conflicts with the main branch
