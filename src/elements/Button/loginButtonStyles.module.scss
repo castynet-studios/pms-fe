@@ -4,15 +4,15 @@
     width: 320px;
     height: 40px;
     margin: 5px;
-    border-radius: 1000px;
-    background-color: #00A3A3;
-    color: #ffffff;
+    border-radius: var(--borderRadiusLg);
+    background-color: var(--darkGreen);
+    color: var(--white);
 }
 .withGoogle {
     width: 320px;
     height: 40px;
     margin: 5px;
-    border-radius: 1000px;
-    background-color: #0B9673;
-    color: #ffffff;
+    border-radius: var(--borderRadiusLg);
+    background-color: var(--lightGreen);
+    color: var(--white);
 }

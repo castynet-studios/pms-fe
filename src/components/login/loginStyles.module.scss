@@ -5,7 +5,7 @@
 input {    
     width: 320px;
     height: 30px;
-    border-radius: 50px;
+    border-radius: var(--borderRadius);
     padding: 15px;
     margin: 5px;
 }
@@ -19,14 +19,13 @@ div {
 .loginBtn {
     width: 130px;
     height: 40px;
-
-    background: #FFFFFF;
-    border-radius: 1000px 0px 0px 1000px;
+    background-color: var(--white);
+    border-radius: var(--borderRadiusLg) 0px 0px var(--borderRadiusLg);
 }
 .registerBtn {
     width: 130px;
     height: 40px;
 
-    background: #0B9673;
-    border-radius: 0px 1000px 1000px 0px;
+    background: var(--lightGreen);
+    border-radius: 0px var(--borderRadiusLg) var(--borderRadiusLg) 0px;
 }
