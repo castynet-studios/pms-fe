@@ -51,3 +51,4 @@ export const ROUTES = () => (
     <Route path="*" element={<>404</>} />
   </Routes>
 );
+export default ROUTES;
