@@ -14,13 +14,13 @@ export default function Login() {
                    Email
                 </label>
                 <br />
-                <input type="email" id="email" name="email" />
+                <input className={styles.input} type="email" id="email" name="email" />
                 <br />
                 <label for="password">
                    Password
                 </label>
                 <br />
-                <input type="password" id="password" name="password"/>
+                <input className={styles.input} type="password" id="password" name="password"/>
             </form>
           </div>
           <LoginButton />

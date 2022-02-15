@@ -1,18 +1,18 @@
-
-
 .login {
     width: 320px;
     height: 40px;
     margin: 5px;
-    border-radius: var(--borderRadiusLg);
+    border-radius: var(--borderRadiusXl);
     background-color: var(--darkGreen);
     color: var(--white);
+    border: 0px;
 }
 .withGoogle {
     width: 320px;
     height: 40px;
     margin: 5px;
-    border-radius: var(--borderRadiusLg);
+    border: 0px;
+    border-radius: var(--borderRadiusXl);
     background-color: var(--lightGreen);
     color: var(--white);
 }
