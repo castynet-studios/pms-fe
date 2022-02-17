@@ -1,6 +1,7 @@
+import React from "react";
 import styles from "./auth.module.scss";
-import Login from 'components/login/loginComp';
-import Signature from 'components/Signature/signature'
+import Login from "components/login/loginComp";
+import Signature from "components/Signature/signature";
 
 function Auth() {
   return (
@@ -11,7 +12,6 @@ function Auth() {
         </div>
         <Signature />
       </div>
-      
     </>
   );
 }

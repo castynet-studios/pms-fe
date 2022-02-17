@@ -1,0 +1,8 @@
+# Ignore artifacts:
+build
+coverage
+
+
+*.md
+*.rst
+*.txt
