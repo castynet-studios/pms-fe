@@ -3,9 +3,12 @@
 :root {
   --font: "Poppins", sans-serif;
   --headingFont: "Lato", sans-serif;
+
   --borderRadius: 5px;
   --borderRadiusLg: 10px;
   --borderRadiusSm: 3px;
+  --borderRadiusXl: 1000px;
+  --blue: #00a3a3;
   --lightBlue: #3ccece;
   --lightGreen: #0b9673;
   --darkGreen: #006f6f;
@@ -18,6 +21,7 @@
   --yellow: #ffc700;
   --lime: #c6d800;
   --orange: #ff8a00;
+  --black: #000000;
 }
 
 * {

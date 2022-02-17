@@ -1,3 +1,4 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Auth from "pages/auth/auth";
@@ -51,3 +52,4 @@ export const ROUTES = () => (
     <Route path="*" element={<>404</>} />
   </Routes>
 );
+export default ROUTES;
