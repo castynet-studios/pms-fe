@@ -1,0 +1,46 @@
+.eventsection{
+    margin: 1em 0;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 988px;
+    height: 122px;
+    left: 364px;
+    top: 189px;
+    background: var(--white);
+    border: 1px solid var(--grey);
+    box-sizing: border-box;
+    border-radius: var(--borderRadius);
+    
+    h3{
+        width: 19.6%;
+        font-weight: bold;
+    }
+
+    .pointers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 122px;
+        left: 1296px;
+        top: 189px;
+        background: var(--lightGrey);
+        border: 1px solid var(--grey);
+        box-sizing: border-box;
+        border-radius: 0px var(--borderRadius) var(--borderRadius) 0px;
+
+        a{
+            color: var(--darkGreen);
+            font-weight: bold;
+            text-align: center;
+            left: 92.57%;
+            right: 6.04%;
+            top: 25.2%;
+            bottom: 73.23%;
+            mix-blend-mode: normal;
+        }
+
+    }
+}
