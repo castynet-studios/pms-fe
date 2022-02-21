@@ -1,6 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+//pages
+import SinglePigList from "pages/singlePigList/singlePigList";
+import AddNewPig from "pages/addNewPig/addNewPig";
+
 import Auth from "pages/auth/auth";
 
 const Paths = {
@@ -30,7 +34,7 @@ const Paths = {
 
 export const ROUTES = () => (
   <Routes>
-    <Route path={Paths.Home} element={<>home</>} />
+    <Route path={Paths.Home} element={<>homes</>} />
     <Route path={Paths.Dashboard} element={<>dashboard</>} />
     <Route path={Paths.Login} element={<Auth />} />
     <Route path={Paths.Register} element={<>Register</>} />
@@ -42,11 +46,11 @@ export const ROUTES = () => (
     <Route path={Paths.Health} element={<>Health</>} />
     <Route path={Paths.Feeding} element={<>Feeding</>} />
     <Route path={Paths.Events} element={<>events</>} />
-    <Route path={Paths.AddPig} element={<>AddPig</>} />
+    <Route path={Paths.AddPig} element={<AddNewPig />} />
     <Route path={Paths.Breeding} element={<>Breeding</>} />
     <Route path={Paths.NotFound} element={<>NotFound</>} />
     <Route path={Paths.SingleEvent()} element={<>SingleEvent</>} />
-    <Route path={Paths.SinglePig()} element={<>SinglePig</>} />
+    <Route path={Paths.SinglePig()} element={<SinglePigList />} />
     <Route path={Paths.SingleProduct()} element={<>SingleProduct</>} />
     <Route path={Paths.NotFound} element={<>404</>} />
     <Route path="*" element={<>404</>} />
