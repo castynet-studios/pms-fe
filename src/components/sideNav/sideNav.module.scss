@@ -1,0 +1,77 @@
+.logo{
+  text-align: center;
+  background-color: var(--darkGreen);
+  font-size: 8px;
+
+  h1 {
+    font-weight: bold;
+    color: var(--white);
+  }  
+}
+
+.menuBars {
+  margin-left: 12rem;
+  background: none;
+  color: var(--white);
+
+  &:hover {
+    filter: brightness(0.8);
+    color: var(--black);
+  }
+}
+
+.sidenav {
+  height: 100vh;
+  width: 230px;
+  position: fixed;
+  margin-top: 12px;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  transition: 0.5s;
+  bottom: 0;
+    
+    li {
+      padding: 12px 8px 12px 20px;
+      text-decoration: none;
+      color: var(--black);
+      transition: 0.3s;
+  
+      &:hover {
+        filter: brightness(0.8);
+        background-color: var(--lightGrey);
+      }
+    }
+}
+.navLinkItem {
+  color: black;
+  max-width: 360px;
+  text-decoration: none;
+
+  span {
+    margin-left: 16px;
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+    color: var(--black);
+  }
+}
+.menu {
+  background-color: var(--white);
+
+  hr {
+    color: var(--darkgGrey);
+  }
+}
+
+.btn {
+  width: 220px;
+  position: absolute;
+  bottom: 8vh;
+}
+.sign {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
