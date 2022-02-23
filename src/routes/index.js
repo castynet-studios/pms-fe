@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Auth from "pages/auth/auth";
+import Events from "pages/events/events";
 
 const Paths = {
   Home: "/",
@@ -41,7 +42,7 @@ export const ROUTES = () => (
     <Route path={Paths.Accounting} element={<>Accounting</>} />
     <Route path={Paths.Health} element={<>Health</>} />
     <Route path={Paths.Feeding} element={<>Feeding</>} />
-    <Route path={Paths.Events} element={<>events</>} />
+    <Route path={Paths.Events} element={<Events />} />
     <Route path={Paths.AddPig} element={<>AddPig</>} />
     <Route path={Paths.Breeding} element={<>Breeding</>} />
     <Route path={Paths.NotFound} element={<>NotFound</>} />
