@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./EventStyles.module.scss";
+import styles from "./eventStyles.module.scss";
 
 const EventComp = ({ event }) => {
   return (
@@ -18,7 +18,7 @@ const EventComp = ({ event }) => {
       <h3>{event.pig}</h3>
       <h3>{event.priority}</h3>
       <div className={styles.pointers}>
-        <a>&gt;&gt;</a>
+        <a href="#">&gt;&gt;</a>
       </div>
     </div>
   );
