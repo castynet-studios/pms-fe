@@ -1,9 +1,9 @@
 import { useState } from "react";
-// import styles from "./events.module.scss";
+import styles from "./events.module.scss";
 import EventsComp from "components/events/eventsComp";
 
 const Events = () => {
-  const [events] = useState([
+  const [events, setEvents] = useState([
     {
       event: "Feeding",
       days: "5 days",
@@ -63,5 +63,4 @@ const Events = () => {
     </>
   );
 };
-
 export default Events;

@@ -1,6 +1,6 @@
 // import { useState } from "react"
-import styles from "./eventsStyles.module.scss";
-import EventComp from "components/event/eventComp";
+import styles from "./EventsStyles.module.scss";
+import EventComp from "components/event/EventComp";
 
 const EventsComp = ({ events }) => {
   return (
@@ -13,7 +13,7 @@ const EventsComp = ({ events }) => {
         <h3>Priority</h3>
       </div>
       {events.map((event, index) => (
-        <EventComp event={event} key={index} />
+        <EventComp event={event} />
       ))}
     </>
   );
