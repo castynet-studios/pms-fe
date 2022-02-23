@@ -18,7 +18,7 @@ const EventComp = ({ event }) => {
       <h3>{event.pig}</h3>
       <h3>{event.priority}</h3>
       <div className={styles.pointers}>
-        <a href="#">&gt;&gt;</a>
+        <p>&gt;&gt;</p>
       </div>
     </div>
   );
