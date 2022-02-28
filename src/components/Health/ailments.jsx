@@ -1,95 +1,161 @@
 import React from "react";
-import RecurringAilments from "components/Health/recurringAilments";
-import Vaccinations from "components/Health/vaccinations";
+import styles from "components/Health/ailmentStyles.module.scss";
+import RecurringAilments from "components/Health/vaccinations";
+import Vaccinations from "components/Health/recurringAilments";
 // import { Routes, Route } from "react-router-dom";
+import { Icons } from "elements";
 
 const ailments = () => {
   return (
     <>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
-            <table class="table table-bordered table-hover">
-              <thead>
+          <div className="col-md-2"></div>
+          <div className="col-md-4 mt-5" style={{ marginLeft: "50px" }}>
+            <table
+              class="table table-hover"
+              style={{ backgroundColor: "white" }}
+              className={styles.table}
+            >
+              {/* <p className={styles.p}></p> */}
+
+              <thead className={styles.th}>
                 <tr>
-                  <th>AILMENTS</th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
+                  <th colspan="4">AILMENTS</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className={styles.td}>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
                 <tr>
                   <td>7 PIGS</td>
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
-                  <td>VIEW</td>
+                  <td>
+                    <button className={styles.button}>
+                      View
+                      <Icons.ChevronsRight size="25" color="#0b9673" />
+                    </button>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -99,6 +165,7 @@ const ailments = () => {
             <RecurringAilments />
             <Vaccinations />
           </div>
+          <div className="col-md-2"></div>
         </div>
       </div>
     </>

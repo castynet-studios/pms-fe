@@ -1,0 +1,32 @@
+.button {
+  background-color: var(--grey);
+  border: none;
+  color: var(--white);
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 108px;
+  height: 40px;
+  // margin: 4px 2px;
+  border-radius: var(--borderRadiusXl);
+  font-size: 19px;
+}
+td {
+  border: 0;
+  padding: 0;
+}
+th {
+  border: 1px;
+  padding: 0;
+}
+p {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+table {
+  border: 1px;
+  background-color: var(--grey);
+}
