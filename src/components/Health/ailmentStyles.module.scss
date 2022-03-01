@@ -1,3 +1,6 @@
+.container {
+  font-family: var(--font);
+}
 .button {
   background-color: var(--grey);
   border: none;
@@ -16,17 +19,15 @@
 td {
   border: 0;
   padding: 0;
+  font-size: 17px;
 }
 th {
   border: 1px;
   padding: 0;
+  font-size: 24px;
 }
 p {
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 5px;
-}
-table {
-  border: 1px;
-  background-color: var(--grey);
 }

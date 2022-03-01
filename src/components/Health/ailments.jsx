@@ -8,12 +8,12 @@ import { Icons } from "elements";
 const ailments = () => {
   return (
     <>
-      <div className="container">
+      <div className="container" className={styles.container}>
         <div className="row">
           <div className="col-md-2"></div>
           <div className="col-md-4 mt-5" style={{ marginLeft: "50px" }}>
             <table
-              class="table table-hover"
+              class="table table-hover rounded"
               style={{ backgroundColor: "white" }}
               className={styles.table}
             >
@@ -163,6 +163,7 @@ const ailments = () => {
 
           <div className="col-md-4">
             <RecurringAilments />
+            <br />
             <Vaccinations />
           </div>
           <div className="col-md-2"></div>

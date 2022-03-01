@@ -10,7 +10,7 @@ const recurringAilments = () => {
           <div className="col-md-0"></div>
           <div className="col-md-12 mt-3">
             <table
-              class="table table-hover"
+              class="table table-hover rounded"
               style={{ backgroundColor: "white" }}
               className={styles.table}
             >

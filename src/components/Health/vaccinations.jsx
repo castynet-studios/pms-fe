@@ -10,7 +10,7 @@ const vaccinations = () => {
           <div className="col-md-0"></div>
           <div className="col-md-12 mt-5">
             <table
-              class="table table-hover"
+              class="table table-hover rounded"
               style={{ backgroundColor: "white" }}
               className={styles.table}
             >
