@@ -14,18 +14,18 @@ const recurringAilments = () => {
               style={{ backgroundColor: "white" }}
               className={styles.table}
             >
-              <thead className={styles.th}>
+              <thead className={styles.th1}>
                 <tr>
                   <th colspan="4">RECURRING AILMENTS</th>
                 </tr>
               </thead>
-              <tbody className={styles.td}>
+              <tbody className={styles.td1}>
                 <tr>
                   <td>17 PIGS</td>
                   <td>DISEASE A</td>
                   <td>3 DEAD</td>
                   <td>
-                    <button className={styles.button}>
+                    <button className={styles.button1}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -36,7 +36,7 @@ const recurringAilments = () => {
                   <td>DISEASE C</td>
                   <td>1 DEAD</td>
                   <td>
-                    <button className={styles.button}>
+                    <button className={styles.button1}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -47,7 +47,7 @@ const recurringAilments = () => {
                   <td>DISEASE B</td>
                   <td>9 DEAD</td>
                   <td>
-                    <button className={styles.button}>
+                    <button className={styles.button1}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -58,7 +58,7 @@ const recurringAilments = () => {
                   <td>DISEASE D</td>
                   <td>3 DEAD</td>
                   <td>
-                    <button className={styles.button}>
+                    <button className={styles.button1}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
