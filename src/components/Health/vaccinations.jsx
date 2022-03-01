@@ -5,7 +5,7 @@ import styles from "components/Health/ailmentStyles.module.scss";
 const vaccinations = () => {
   return (
     <>
-      <div className="container">
+      <div className="contain">
         <div className="row">
           <div className="col-md-0"></div>
           <div className="col-md-12 mt-5">
