@@ -8,7 +8,7 @@ import { Icons } from "elements";
 const ailments = () => {
   return (
     <>
-      <div className="container" className={styles.container}>
+      <div className="container" className={styles.container1}>
         <div className="row">
           <div className="col-md-2"></div>
           <div className="col-md-4 mt-5" style={{ marginLeft: "50px" }}>
