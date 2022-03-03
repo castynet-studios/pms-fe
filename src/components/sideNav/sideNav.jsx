@@ -1,16 +1,32 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import navsty from './sideNav.module.scss'
-import { Button } from "elements";
+import { Button, Icons } from "elements";
 import Signature from "elements/Signature/signature"
-import { Link } from "react-router-dom";
-import { Icons } from "elements";
+
+
+
 
 
 function SideNav() {
     const [sidebar, setSidebar ] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
+
+    const ShowMenu = () => {
+        return (
+            <Link to="#" className={navsty.menuBars}>
+                <Icons.ArrowRight size="20" onClick={showSidebar} />
+            </Link>
+        )
+    }
+    const HideMenu = () => {
+        return(
+            <Link to="#" className={navsty.menuBars}>
+                <Icons.ArrowLeft size="20" onClick={!showSidebar} />
+            </Link>
+        )
+    }
 
     let navigate = useNavigate(); 
     const listPig = () =>{ 
@@ -26,13 +42,11 @@ function SideNav() {
         <div className={navsty.sidenav}>
             <div className={navsty.logo}>
                 <h1>PIGGERY<br /> MANAGEMENT</h1>
-                <Link to="#" className={navsty.menuBars}>
-                    <Icons.ArrowRight size="20" onClick={showSidebar} />
-                </Link>
+                { sidebar ? <ShowMenu /> : <HideMenu /> }
             </div>
-            <div className={navsty.menu}>
-                <nav>
-                    <ul>
+             <div >
+                <nav className={sidebar ? navsty.sidenav.active : navsty.nav}>
+                    <ul onClick={showSidebar}>
                         <li>
                         <Link to="/dashboard" key="/Dashboard" className={navsty.navLinkItem}>
                             <Icons.Dash size="30" />

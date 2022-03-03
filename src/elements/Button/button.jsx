@@ -17,7 +17,7 @@ function Button({ name, color, radius, bgColor, clickFn }) {
 }
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
 };
 
 export default Button;
