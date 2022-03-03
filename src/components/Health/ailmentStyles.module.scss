@@ -1,7 +1,7 @@
 .contain {
   font-family: var(--font);
 }
-.button1 {
+.viewBtn {
   background-color: var(--grey);
   border: none;
   color: var(--white);
@@ -22,7 +22,8 @@
   font-size: 17px;
 }
 .th1 {
-  border: 1px;
+  border-radius: 10px;
+  // border: 1px solid grey;
   padding: 0;
   font-size: 24px;
 }
@@ -30,4 +31,8 @@ p {
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 5px;
+}
+table {
+  border: 1px;
+  border-radius: 10px;
 }

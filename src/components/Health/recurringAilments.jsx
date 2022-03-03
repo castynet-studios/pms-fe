@@ -10,7 +10,7 @@ const recurringAilments = () => {
           <div className="col-md-0"></div>
           <div className="col-md-12 mt-3">
             <table
-              class="table table-hover rounded"
+              class="table table-borderless rounded"
               style={{ backgroundColor: "white" }}
               className={styles.table}
             >
@@ -25,7 +25,7 @@ const recurringAilments = () => {
                   <td>DISEASE A</td>
                   <td>3 DEAD</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -36,7 +36,7 @@ const recurringAilments = () => {
                   <td>DISEASE C</td>
                   <td>1 DEAD</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -47,7 +47,7 @@ const recurringAilments = () => {
                   <td>DISEASE B</td>
                   <td>9 DEAD</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -58,7 +58,7 @@ const recurringAilments = () => {
                   <td>DISEASE D</td>
                   <td>3 DEAD</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>

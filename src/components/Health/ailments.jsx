@@ -13,7 +13,7 @@ const ailments = () => {
           <div className="col-md-2"></div>
           <div className="col-md-4 mt-5" style={{ marginLeft: "50px" }}>
             <table
-              class="table table-hover rounded"
+              class="table table-borderless rounded"
               style={{ backgroundColor: "white" }}
               className={styles.table}
             >
@@ -22,6 +22,7 @@ const ailments = () => {
               <thead className={styles.th1}>
                 <tr>
                   <th colspan="4">AILMENTS</th>
+                  <hr />
                 </tr>
               </thead>
               <tbody className={styles.td1}>
@@ -30,7 +31,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -41,7 +42,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -52,7 +53,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -63,7 +64,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -74,7 +75,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -85,7 +86,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -96,7 +97,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -107,7 +108,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -118,7 +119,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -129,7 +130,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -140,7 +141,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
@@ -151,7 +152,7 @@ const ailments = () => {
                   <td>DISEASE D</td>
                   <td>1 MONTH</td>
                   <td>
-                    <button className={styles.button1}>
+                    <button className={styles.viewBtn}>
                       View
                       <Icons.ChevronsRight size="25" color="#0b9673" />
                     </button>
