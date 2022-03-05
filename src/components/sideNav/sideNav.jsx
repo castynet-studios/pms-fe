@@ -5,9 +5,6 @@ import { Button, Icons } from "elements";
 import Signature from "elements/Signature/signature"
 
 
-
-
-
 function SideNav() {
     const [sidebar, setSidebar ] = useState(false);
 
@@ -15,15 +12,8 @@ function SideNav() {
 
     const ShowMenu = () => {
         return (
-            <Link to="#" className={navsty.menuBars}>
-                <Icons.ArrowRight size="20" onClick={showSidebar} />
-            </Link>
-        )
-    }
-    const HideMenu = () => {
-        return(
-            <Link to="#" className={navsty.menuBars}>
-                <Icons.ArrowLeft size="20" onClick={!showSidebar} />
+            <Link to="#" className={navsty.toggle}>
+                <Icons.ArrowRight size="20" onClick={showSidebar}/>
             </Link>
         )
     }
@@ -39,65 +29,80 @@ function SideNav() {
     }
 
     return (
-        <div className={navsty.sidenav}>
-            <div className={navsty.logo}>
-                <h1>PIGGERY<br /> MANAGEMENT</h1>
-                { sidebar ? <ShowMenu /> : <HideMenu /> }
-            </div>
+        <nav className={sidebar ? navsty.sidebar : navsty.close}>
+            <header>
+                <div className={navsty.imageText}>
+                    <span className={navsty.image}>
+                        <img src="logo.jpeg" alt="logo" />
+                    </span>
+
+                    <div className={navsty.text}>
+                        <span className={navsty.name1}>PIGGERY</span>
+                        <span className={navsty.name2}>MANAGEMENT</span>
+                    </div>
+                </div>
+
+                <ShowMenu /> 
+            </header>
+
              <div >
-                <nav className={sidebar ? navsty.sidenav.active : navsty.nav}>
-                    <ul onClick={showSidebar}>
-                        <li>
-                        <Link to="/dashboard" key="/Dashboard" className={navsty.navLinkItem}>
-                            <Icons.Dash size="30" />
-                            <span>Dashboard</span>
-                        </Link>
-                        </li>                    
-                        <hr />
-                        <li>
-                            <Link to="/events" className={navsty.navLinkItem} key="/Events">
-                                <Icons.Even size="30" />
-                                <span>Events</span>
-                            </Link>
-                        </li>
-                        <hr />
-                        <li>
-                            <Link to="/health" className={navsty.navLinkItem} key="/health">
-                                <Icons.Helth size="30" />
-                                <span>Health</span>
-                            </Link>
-                        </li>
-                        <hr />
-                        <li>
-                            <Link to="/breeding" className={navsty.navLinkItem} key="/Breeding">
-                                <Icons.Bred size="30" />
-                                <span>Breeding</span>
-                            </Link>
-                        </li>
-                        <hr />
-                        <li>
-                            <Link to="/feeding" className={navsty.navLinkItem} key="/Feeding">
-                                <Icons.Feding size="30" />
-                                <span>Feeding & Drinking</span>
-                            </Link>
-                        </li>
-                        <hr />
-                        <li>
-                            <Link to="/catalogue" className={navsty.navLinkItem} key="/Catalogue">
-                                <Icons.Catalog size="30" />
-                                <span>Catalogue</span>
-                            </Link>
-                        </li>
-                        <hr />
-                        <li>
-                            <Link to="/accounting" className={navsty.navLinkItem} key="/Accounting">
-                                <Icons.Accounts size="30" />
-                                <span>Accounting</span>
-                            </Link>
-                        </li>
-                        <hr />
-                    </ul>
-                </nav>
+                <div className={navsty.menuBar}>
+                    <div className={navsty.menu}>
+                        <ul>
+                        <hr/ >
+                            <li>
+                                <Link to="/dashboard" key="/Dashboard">
+                                    <Icons.Dash className={navsty.icon} size="30" />
+                                    <span className={navsty.text}>Dashboard</span>
+                                </Link>
+                            </li>
+                            <hr />
+                            <li>
+                                <Link to="/events" key="/Events">
+                                    <Icons.Even size="30" className={navsty.icon} />
+                                    <span className={navsty.text}>Events</span>
+                                </Link>
+                            </li>
+                            <hr />
+                            <li>
+                                <Link to="/health" key="/health">
+                                    <Icons.Helth size="30" className={navsty.icon}/> 
+                                    <span className={navsty.text}>Health</span>
+                                </Link>
+                            </li>
+                            <hr />
+                            <li>
+                                <Link to="/breeding" key="/Breeding">
+                                    <Icons.Bred size="30" className={navsty.icon} />
+                                    <span className={navsty.text}>Breeding</span>
+                                </Link>
+                            </li>
+                            <hr />
+                            <li>
+                                <Link to="/feeding" key="/Feeding">
+                                    <Icons.Feding size="30" className={navsty.icon} />
+                                    <span className={navsty.text}>Feeding & Drinking</span>
+                                </Link>
+                            </li>
+                            <hr />
+                            <li>
+                                <Link to="/catalogue" key="/Catalogue">
+                                    <Icons.Catalog size="30"  className={navsty.icon}/>
+                                    <span className={navsty.text}>Catalogue</span>
+                                </Link>
+                            </li>
+                            <hr />
+                            <li>
+                                <Link to="/accounting" key="/Accounting">
+                                    <Icons.Accounts size="30" className={navsty.icon} />
+                                    <span className={navsty.text}>Accounting</span>
+                                </Link>
+                            </li>
+                            <hr />
+
+                        </ul>
+                    </div>
+                </div>
             </div> 
             
         <div className={navsty.btn}>
@@ -121,7 +126,7 @@ function SideNav() {
                     name="Sagana Organic built by Castynet"
                     height="60px" />
             </div>
-        </div>
+        </nav>
  );
 
 }
