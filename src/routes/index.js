@@ -1,37 +1,41 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-import Auth from "pages/auth/auth";
-import Events from "pages/events/events";
+//pages
+import SinglePigList from 'pages/singlePigList/singlePigList';
+import AddNewPig from 'pages/addNewPig/addNewPig';
+
+import Auth from 'pages/auth/auth';
+import Events from 'pages/events/events';
 
 const Paths = {
-  Home: "/",
-  Dashboard: "/dashboard",
+  Home: '/',
+  Dashboard: '/dashboard',
 
-  Login: "/login",
-  Register: "/register",
-  ForgotPassword: "/forgot-password",
+  Login: '/login',
+  Register: '/register',
+  ForgotPassword: '/forgot-password',
 
-  User: "/user",
-  Pigs: "/pigs",
-  Catalogue: "/catalogue",
-  Accounting: "/accounting",
-  Health: "/health",
-  Feeding: "/feeding",
-  Events: "/events",
-  Breeding: "/breeding",
+  User: '/user',
+  Pigs: '/pigs',
+  Catalogue: '/catalogue',
+  Accounting: '/accounting',
+  Health: '/health',
+  Feeding: '/feeding',
+  Events: '/events',
+  Breeding: '/breeding',
 
-  AddPig: "/pigs/edit",
-  NotFound: "/404",
+  AddPig: '/pigs/edit',
+  NotFound: '/404',
 
-  SinglePig: (id = ":id") => `/pigs/id/${id}`,
-  SingleEvent: (id = ":id") => `/events/id/${id}`,
-  SingleProduct: (id = ":id") => `/catalogue/id/${id}`,
+  SinglePig: (id = ':id') => `/pigs/id/${id}`,
+  SingleEvent: (id = ':id') => `/events/id/${id}`,
+  SingleProduct: (id = ':id') => `/catalogue/id/${id}`
 };
 
 export const ROUTES = () => (
   <Routes>
-    <Route path={Paths.Home} element={<>home</>} />
+    <Route path={Paths.Home} element={<>homes</>} />
     <Route path={Paths.Dashboard} element={<>dashboard</>} />
     <Route path={Paths.Login} element={<Auth />} />
     <Route path={Paths.Register} element={<>Register</>} />
@@ -42,12 +46,12 @@ export const ROUTES = () => (
     <Route path={Paths.Accounting} element={<>Accounting</>} />
     <Route path={Paths.Health} element={<>Health</>} />
     <Route path={Paths.Feeding} element={<>Feeding</>} />
+    <Route path={Paths.AddPig} element={<AddNewPig />} />
     <Route path={Paths.Events} element={<Events />} />
-    <Route path={Paths.AddPig} element={<>AddPig</>} />
     <Route path={Paths.Breeding} element={<>Breeding</>} />
     <Route path={Paths.NotFound} element={<>NotFound</>} />
     <Route path={Paths.SingleEvent()} element={<>SingleEvent</>} />
-    <Route path={Paths.SinglePig()} element={<>SinglePig</>} />
+    <Route path={Paths.SinglePig()} element={<SinglePigList />} />
     <Route path={Paths.SingleProduct()} element={<>SingleProduct</>} />
     <Route path={Paths.NotFound} element={<>404</>} />
     <Route path="*" element={<>404</>} />
