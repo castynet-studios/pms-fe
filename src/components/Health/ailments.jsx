@@ -1,20 +1,20 @@
-import React from "react";
-import styles from "components/Health/ailmentStyles.module.scss";
-import RecurringAilments from "components/Health/vaccinations";
-import Vaccinations from "components/Health/recurringAilments";
+import React from 'react';
+import styles from 'components/Health/ailmentStyles.module.scss';
+import RecurringAilments from 'components/Health/vaccinations';
+import Vaccinations from 'components/Health/recurringAilments';
 // import { Routes, Route } from "react-router-dom";
-import { Icons } from "elements";
+import { Icons } from 'elements';
 
 const ailments = () => {
   return (
     <>
-      <div className="container" className={styles.contain}>
+      <div className={styles.container}>
         <div className="row">
           <div className="col-md-2"></div>
-          <div className="col-md-4 mt-5" style={{ marginLeft: "50px" }}>
+          <div className="col-md-4 mt-5" style={{ marginLeft: '50px' }}>
             <table
               class="table table-borderless rounded"
-              style={{ backgroundColor: "white" }}
+              style={{ backgroundColor: 'white' }}
               className={styles.table}
             >
               {/* <p className={styles.p}></p> */}
