@@ -10,6 +10,9 @@ import { Feedly } from '@styled-icons/simple-icons/Feedly';
 import { Spreadsheet } from '@styled-icons/boxicons-solid/Spreadsheet';
 import { Todo } from '@styled-icons/remix-fill/Todo';
 import { ChevronsRight } from '@styled-icons/boxicons-regular/ChevronsRight';
+import { ArrowheadRightOutline } from 'styled-icons/evaicons-outline';
+import { PiggyBank } from 'styled-icons/fa-solid';
+import { PatchPlus } from 'styled-icons/bootstrap';
 
 export const Icons = {
   Profile: Person,
@@ -23,5 +26,8 @@ export const Icons = {
   Catalog: Spreadsheet,
   Accounts: Todo,
   Copyright: Copyright,
-  ChevronsRight: ChevronsRight
+  ChevronsRight: ChevronsRight,
+  Open: ArrowheadRightOutline,
+  Pig: PiggyBank,
+  Plus: PatchPlus
 };
