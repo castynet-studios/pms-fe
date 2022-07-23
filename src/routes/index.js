@@ -1,11 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-//pages
+import Auth from 'pages/auth/auth';
+import Health from 'pages/health/health';
 import SinglePigList from 'pages/singlePigList/singlePigList';
 import AddNewPig from 'pages/addNewPig/addNewPig';
-
-import Auth from 'pages/auth/auth';
 import Events from 'pages/events/events';
 
 const Paths = {
@@ -44,7 +43,7 @@ export const ROUTES = () => (
     <Route path={Paths.Pigs} element={<>Pigs</>} />
     <Route path={Paths.Catalogue} element={<>Catalogue</>} />
     <Route path={Paths.Accounting} element={<>Accounting</>} />
-    <Route path={Paths.Health} element={<>Health</>} />
+    <Route path={Paths.Health} element={<Health />} />
     <Route path={Paths.Feeding} element={<>Feeding</>} />
     <Route path={Paths.AddPig} element={<AddNewPig />} />
     <Route path={Paths.Events} element={<Events />} />
