@@ -1,35 +1,36 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 //pages
-import SinglePigList from "pages/singlePigList/singlePigList";
-import AddNewPig from "pages/addNewPig/addNewPig";
+import SinglePigList from 'pages/singlePigList/singlePigList';
+import AddNewPig from 'pages/addNewPig/addNewPig';
 
-import Auth from "pages/auth/auth";
+import Auth from 'pages/auth/auth';
+import Events from 'pages/events/events';
 
 const Paths = {
-  Home: "/",
-  Dashboard: "/dashboard",
+  Home: '/',
+  Dashboard: '/dashboard',
 
-  Login: "/login",
-  Register: "/register",
-  ForgotPassword: "/forgot-password",
+  Login: '/login',
+  Register: '/register',
+  ForgotPassword: '/forgot-password',
 
-  User: "/user",
-  Pigs: "/pigs",
-  Catalogue: "/catalogue",
-  Accounting: "/accounting",
-  Health: "/health",
-  Feeding: "/feeding",
-  Events: "/events",
-  Breeding: "/breeding",
+  User: '/user',
+  Pigs: '/pigs',
+  Catalogue: '/catalogue',
+  Accounting: '/accounting',
+  Health: '/health',
+  Feeding: '/feeding',
+  Events: '/events',
+  Breeding: '/breeding',
 
-  AddPig: "/pigs/edit",
-  NotFound: "/404",
+  AddPig: '/pigs/edit',
+  NotFound: '/404',
 
-  SinglePig: (id = ":id") => `/pigs/id/${id}`,
-  SingleEvent: (id = ":id") => `/events/id/${id}`,
-  SingleProduct: (id = ":id") => `/catalogue/id/${id}`,
+  SinglePig: (id = ':id') => `/pigs/id/${id}`,
+  SingleEvent: (id = ':id') => `/events/id/${id}`,
+  SingleProduct: (id = ':id') => `/catalogue/id/${id}`
 };
 
 export const ROUTES = () => (
@@ -45,8 +46,8 @@ export const ROUTES = () => (
     <Route path={Paths.Accounting} element={<>Accounting</>} />
     <Route path={Paths.Health} element={<>Health</>} />
     <Route path={Paths.Feeding} element={<>Feeding</>} />
-    <Route path={Paths.Events} element={<>events</>} />
     <Route path={Paths.AddPig} element={<AddNewPig />} />
+    <Route path={Paths.Events} element={<Events />} />
     <Route path={Paths.Breeding} element={<>Breeding</>} />
     <Route path={Paths.NotFound} element={<>NotFound</>} />
     <Route path={Paths.SingleEvent()} element={<>SingleEvent</>} />
