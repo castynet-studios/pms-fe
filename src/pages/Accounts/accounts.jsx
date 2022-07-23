@@ -1,7 +1,7 @@
 import SideNav from "components/sideNav/sideNav";
 import TopNav from 'components/topNav/topNav';
 
-function Pig() {
+function Accounting() {
     return (
       <>
         <TopNav />
@@ -9,4 +9,4 @@ function Pig() {
       </>
     );
   }
-  export default Pig;
+  export default Accounting;

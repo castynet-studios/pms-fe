@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./singlePigList.module.scss";
+import React from 'react';
+import styles from './singlePigList.module.scss';
 
-const singlePigList = () => {
+const SinglePigList = () => {
   return (
     <div className={styles.fullcontents}>
       <p className={styles.topper}>Viewing John - A001k</p>
@@ -149,4 +149,4 @@ const singlePigList = () => {
   );
 };
 
-export default singlePigList;
+export default SinglePigList;
