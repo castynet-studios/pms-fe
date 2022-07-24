@@ -1,9 +1,8 @@
-import SideNav from 'components/sideNav/sideNav';
-import TopNav from 'components/topNav/topNav';
-
 import { useState } from 'react';
-// import styles from "./events.module.scss";
+
 import EventsComp from 'components/events/eventsComp';
+
+import styles from './events.module.scss';
 
 const Events = () => {
   const [events] = useState([
@@ -56,15 +55,16 @@ const Events = () => {
       priority: 'Crucial'
     }
   ]);
+
   return (
     <>
-      <TopNav />
-      <SideNav />
-      {events.length > 0 ? (
-        <EventsComp events={events} />
-      ) : (
-        'No events available at the moment :)'
-      )}
+      <div className={styles.eventsWrapper}>
+        {events.length > 0 ? (
+          <EventsComp events={events} />
+        ) : (
+          'No events available at the moment :)'
+        )}
+      </div>
     </>
   );
 };
