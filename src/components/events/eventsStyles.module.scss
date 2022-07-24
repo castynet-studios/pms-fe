@@ -2,13 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  // margin: 2em 2em 1.3em;
-
   width: 988px;
   height: 71px;
   left: 364px;
   top: 95px;
-
   background: var(--white);
   border: 1px solid var(--grey);
   box-sizing: border-box;
@@ -19,17 +16,12 @@
     height: 36px;
     left: 1147px;
     top: 113px;
-
-    // font-family: Poppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
     color: var(--grey);
   }
 }

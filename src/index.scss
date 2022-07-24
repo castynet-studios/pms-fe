@@ -51,3 +51,16 @@ button {
 a {
   text-decoration: none;
 }
+
+.contentWrapper {
+  display: flex;
+}
+
+.content {
+  padding-top: 50px;
+}
+
+.contentBody {
+  padding: 50px;
+  width: 100%;
+}

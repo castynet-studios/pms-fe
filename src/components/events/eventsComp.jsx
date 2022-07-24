@@ -1,10 +1,10 @@
-// import { useState } from "react"
-import styles from "./eventsStyles.module.scss";
-import EventComp from "components/event/eventComp";
+import EventComp from 'components/event/eventComp';
+
+import styles from './eventsStyles.module.scss';
 
 const EventsComp = ({ events }) => {
   return (
-    <>
+    <div>
       <div className={styles.title}>
         <h3>Event</h3>
         <h3>Date</h3>
@@ -15,7 +15,7 @@ const EventsComp = ({ events }) => {
       {events.map((event, index) => (
         <EventComp event={event} key={index} />
       ))}
-    </>
+    </div>
   );
 };
 
