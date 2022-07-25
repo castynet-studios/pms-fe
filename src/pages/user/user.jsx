@@ -107,18 +107,20 @@ function User() {
         </div>
       </div>
 
-      <div className={userStyle.bottomCard}>
-        <h1>Feeding</h1>
-        <div className={userStyle.days}>
-          <h1>5 Days</h1>
-          <button>Overdue</button>
+      <div className={userStyle.footer}>
+        <div className={userStyle.bottomCard}>
+          <h1>Feeding</h1>
+          <div className={userStyle.days}>
+            <h1>5 Days</h1>
+            <button>Overdue</button>
+          </div>
+          <h1>Me</h1>
+          <h1>A001K</h1>
+          <h1>High</h1>
         </div>
-        <h1>Me</h1>
-        <h1>A001K</h1>
-        <h1>High</h1>
-        <button className={userStyle.next}>
-          <img />
-        </button>
+        <div className={userStyle.next}>
+          <img src={nextImg} alt="Next Image" />
+        </div>
       </div>
     </div>
   );

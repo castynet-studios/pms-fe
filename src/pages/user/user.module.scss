@@ -81,8 +81,10 @@ a {
 }
 
 .adminCards {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 38px;
 }
 
@@ -148,14 +150,21 @@ a {
   border-radius: 0px 0px 5px 0px;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
 .bottomCard {
   display: flex;
   flex-direction: row;
-  background-color: #ffffff;
-  margin-top: 40px;
   align-items: center;
   padding: 15px;
-  height: 100px;
 }
 
 .bottomCard > h1 {
@@ -168,11 +177,12 @@ a {
 .days {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80px;
   margin-right: 90px;
 }
 
 .days > h1 {
+  width: 100%;
   font-family: poppins;
   font-size: 20px;
 }
@@ -181,10 +191,12 @@ a {
   background-color: #ff9797;
   border-radius: 1000px;
   border: none;
+  width: 100%;
   font-weight: 500;
 }
 
 .next {
   background-color: #c4c4c4;
   height: 100%;
+  border: none;
 }
