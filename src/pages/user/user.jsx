@@ -10,7 +10,7 @@ function User() {
     <div className={userStyle.main}>
       <div className={userStyle.userInfo}>
         <div className={userStyle.profileImg}>
-          <img />
+          <img src="https://source.unsplash.com/random" alt="Profile Image" />
         </div>
         <div className={userStyle.userName}>
           <h2>James Maina</h2>
