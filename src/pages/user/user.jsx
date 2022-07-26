@@ -28,7 +28,7 @@ function User() {
           </div>
           <div className={userStyle.moreDetails}>
             <img src={passwordImg} alt="password" />
-            <a>Edit Password</a>
+            <a href="https://www.google.com/">Edit Password</a>
           </div>
         </div>
       </div>
@@ -49,8 +49,8 @@ function User() {
             <p>0743665574</p>
           </div>
           <div className={userStyle.adminCardPassword}>
-            <img />
-            <a>Edit Password</a>
+            <img src={passwordImg} alt="password" />
+            <a href="https://www.google.com/">Edit Password</a>
           </div>
           <div className={userStyle.buttons}>
             <button className={userStyle.deleteButton}>Delete</button>
@@ -73,7 +73,7 @@ function User() {
             <p>0743665574</p>
           </div>
           <div className={userStyle.adminCardPassword}>
-            <img />
+            <img src={passwordImg} alt="password" />
             <a>Edit Password</a>
           </div>
           <div className={userStyle.buttons}>
@@ -97,8 +97,8 @@ function User() {
             <p>0743665574</p>
           </div>
           <div className={userStyle.adminCardPassword}>
-            <img />
-            <a>Edit Password</a>
+            <img src={passwordImg} alt="password" />
+            <a href="https://www.google.com/">Edit Password</a>
           </div>
           <div className={userStyle.buttons}>
             <button className={userStyle.deleteButton}>Delete</button>
