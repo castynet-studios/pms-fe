@@ -74,7 +74,7 @@ function User() {
           </div>
           <div className={userStyle.adminCardPassword}>
             <img src={passwordImg} alt="password" />
-            <a>Edit Password</a>
+            <a href="https://www.google.com/">Edit Password</a>
           </div>
           <div className={userStyle.buttons}>
             <button className={userStyle.deleteButton}>Delete</button>
