@@ -1,9 +1,5 @@
 import userStyle from "./user.module.scss";
-import emailImg from "./images/email.svg";
-import phoneImg from "./images/phone.svg";
-import passwordImg from "./images/password.svg";
-import profileImg from "./images/profile.svg";
-import nextImg from "./images/next.svg";
+import { Icons } from "elements";
 
 function User() {
   return (
@@ -21,15 +17,15 @@ function User() {
         <div className={userStyle.verticalLine}></div>
         <div className={userStyle.userDetails}>
           <div className={userStyle.moreDetails}>
-            <img src={emailImg} alt="email" />
+            <img src={Icons.emailImg} alt="email" />
             <p>james@piggery.farm</p>
           </div>
           <div className={userStyle.moreDetails}>
-            <img src={phoneImg} alt="phone" />
+            <img src={Icons.phoneImg} alt="phone" />
             <p>0743665574</p>
           </div>
           <div className={userStyle.moreDetails}>
-            <img src={passwordImg} alt="password" />
+            <img src={Icons.passwordImg} alt="password" />
             <a href="https://www.google.com/">Edit Password</a>
           </div>
         </div>
@@ -39,19 +35,19 @@ function User() {
         <div className={userStyle.adminCardInfo}>
           <h1>Admin</h1>
           <div className={userStyle.adminCardName}>
-            <img src={profileImg} alt="phone" />
+            <img src={Icons.profileImg} alt="phone" />
             <p>Tevin Charles</p>
           </div>
           <div className={userStyle.adminCardEmail}>
-            <img src={emailImg} alt="email" />
+            <img src={Icons.emailImg} alt="email" />
             <p>tevin@piggery.farm</p>
           </div>
           <div className={userStyle.adminCardPhone}>
-            <img src={phoneImg} alt="phone" />
+            <img src={Icons.phoneImg} alt="phone" />
             <p>0743665574</p>
           </div>
           <div className={userStyle.adminCardPassword}>
-            <img src={passwordImg} alt="password" />
+            <img src={Icons.passwordImg} alt="password" />
             <a href="https://www.google.com/">Edit Password</a>
           </div>
           <div className={userStyle.buttons}>
@@ -63,19 +59,19 @@ function User() {
         <div className={userStyle.adminCardInfo}>
           <h1>Super Admin</h1>
           <div className={userStyle.adminCardName}>
-            <img src={profileImg} alt="phone" />
+            <img src={Icons.profileImg} alt="phone" />
             <p>Mary Wangechi</p>
           </div>
           <div className={userStyle.adminCardEmail}>
-            <img src={emailImg} alt="email" />
+            <img src={Icons.emailImg} alt="email" />
             <p>mary@piggery.farm</p>
           </div>
           <div className={userStyle.adminCardPhone}>
-            <img src={phoneImg} alt="phone" />
+            <img src={Icons.phoneImg} alt="phone" />
             <p>0743665574</p>
           </div>
           <div className={userStyle.adminCardPassword}>
-            <img src={passwordImg} alt="password" />
+            <img src={Icons.passwordImg} alt="password" />
             <a href="https://www.google.com/">Edit Password</a>
           </div>
           <div className={userStyle.buttons}>
@@ -87,19 +83,19 @@ function User() {
         <div className={userStyle.adminCardInfo}>
           <h1>Admin</h1>
           <div className={userStyle.adminCardName}>
-            <img src={profileImg} alt="phone" />
+            <img src={Icons.profileImg} alt="phone" />
             <p>Kamau Otieno</p>
           </div>
           <div className={userStyle.adminCardEmail}>
-            <img src={emailImg} alt="email" />
+            <img src={Icons.emailImg} alt="email" />
             <p>oti@piggery.farm</p>
           </div>
           <div className={userStyle.adminCardPhone}>
-            <img src={phoneImg} alt="phone" />
+            <img src={Icons.phoneImg} alt="phone" />
             <p>0743665574</p>
           </div>
           <div className={userStyle.adminCardPassword}>
-            <img src={passwordImg} alt="password" />
+            <img src={Icons.passwordImg} alt="password" />
             <a href="https://www.google.com/">Edit Password</a>
           </div>
           <div className={userStyle.buttons}>
@@ -121,7 +117,7 @@ function User() {
           <div>High</div>
         </div>
         <div className={userStyle.next}>
-          <img src={nextImg} alt="Next" />
+          <img src={Icons.nextImg} alt="Next" />
         </div>
       </div>
     </div>
