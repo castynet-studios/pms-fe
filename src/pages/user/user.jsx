@@ -10,7 +10,7 @@ function User() {
     <div className={userStyle.main}>
       <div className={userStyle.userInfo}>
         <div className={userStyle.profileImg}>
-          <img src="https://source.unsplash.com/random" alt="Profile Image" />
+          <img src="https://source.unsplash.com/random" alt="Profile" />
         </div>
         <div className={userStyle.userName}>
           <h2>James Maina</h2>
@@ -19,15 +19,15 @@ function User() {
         <div className={userStyle.verticalLine}></div>
         <div className={userStyle.userDetails}>
           <div className={userStyle.moreDetails}>
-            <img src={emailImg} alt="email Image" />
+            <img src={emailImg} alt="email" />
             <p>james@piggery.farm</p>
           </div>
           <div className={userStyle.moreDetails}>
-            <img src={phoneImg} alt="phone Image" />
+            <img src={phoneImg} alt="phone" />
             <p>0743665574</p>
           </div>
           <div className={userStyle.moreDetails}>
-            <img src={passwordImg} alt="password Image" />
+            <img src={passwordImg} alt="password" />
             <a>Edit Password</a>
           </div>
         </div>
@@ -37,15 +37,15 @@ function User() {
         <div className={userStyle.adminCardInfo}>
           <h1>Admin</h1>
           <div className={userStyle.adminCardName}>
-            <img src={profileImg} alt="phone Image" />
+            <img src={profileImg} alt="phone" />
             <p>Tevin Charles</p>
           </div>
           <div className={userStyle.adminCardEmail}>
-            <img src={emailImg} alt="email Image" />
+            <img src={emailImg} alt="email" />
             <p>tevin@piggery.farm</p>
           </div>
           <div className={userStyle.adminCardPhone}>
-            <img src={phoneImg} alt="phone Image" />
+            <img src={phoneImg} alt="phone" />
             <p>0743665574</p>
           </div>
           <div className={userStyle.adminCardPassword}>
@@ -61,15 +61,15 @@ function User() {
         <div className={userStyle.adminCardInfo}>
           <h1>Super Admin</h1>
           <div className={userStyle.adminCardName}>
-            <img src={profileImg} alt="phone Image" />
+            <img src={profileImg} alt="phone" />
             <p>Mary Wangechi</p>
           </div>
           <div className={userStyle.adminCardEmail}>
-            <img src={emailImg} alt="email Image" />
+            <img src={emailImg} alt="email" />
             <p>mary@piggery.farm</p>
           </div>
           <div className={userStyle.adminCardPhone}>
-            <img src={phoneImg} alt="phone Image" />
+            <img src={phoneImg} alt="phone" />
             <p>0743665574</p>
           </div>
           <div className={userStyle.adminCardPassword}>
@@ -85,15 +85,15 @@ function User() {
         <div className={userStyle.adminCardInfo}>
           <h1>Admin</h1>
           <div className={userStyle.adminCardName}>
-            <img src={profileImg} alt="phone Image" />
+            <img src={profileImg} alt="phone" />
             <p>Kamau Otieno</p>
           </div>
           <div className={userStyle.adminCardEmail}>
-            <img src={emailImg} alt="email Image" />
+            <img src={emailImg} alt="email" />
             <p>oti@piggery.farm</p>
           </div>
           <div className={userStyle.adminCardPhone}>
-            <img src={phoneImg} alt="phone Image" />
+            <img src={phoneImg} alt="phone" />
             <p>0743665574</p>
           </div>
           <div className={userStyle.adminCardPassword}>
@@ -119,7 +119,7 @@ function User() {
           <h1>High</h1>
         </div>
         <div className={userStyle.next}>
-          <img src={nextImg} alt="Next Image" />
+          <img src={nextImg} alt="Next" />
         </div>
       </div>
     </div>
