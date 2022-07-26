@@ -9,9 +9,11 @@ function User() {
   return (
     <div className={userStyle.main}>
       <div className={userStyle.userInfo}>
-        <div className={userStyle.profileImg}>
-          <img src="https://source.unsplash.com/random" alt="Profile" />
-        </div>
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Profile"
+          className={userStyle.profileImg}
+        />
         <div className={userStyle.userName}>
           <h2>James Maina</h2>
           <h3>Super Admin</h3>
@@ -109,14 +111,14 @@ function User() {
 
       <div className={userStyle.footer}>
         <div className={userStyle.bottomCard}>
-          <h1>Feeding</h1>
-          <div className={userStyle.days}>
-            <h1>5 Days</h1>
-            <button>Overdue</button>
+          <div>Feeding</div>
+          <div className={userStyle.daysDiv}>
+            <div className={userStyle.days}>5 Days</div>
+            <div className={userStyle.overdue}>Overdue</div>
           </div>
-          <h1>Me</h1>
-          <h1>A001K</h1>
-          <h1>High</h1>
+          <div>Me</div>
+          <div>A001K</div>
+          <div>High</div>
         </div>
         <div className={userStyle.next}>
           <img src={nextImg} alt="Next" />
