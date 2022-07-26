@@ -16,8 +16,8 @@ import { PatchPlus } from "styled-icons/bootstrap";
 import emailImg from "./images/email.svg";
 import phoneImg from "./images/phone.svg";
 import passwordImg from "./images/password.svg";
-import profileImg from "./images/profile.svg";
 import nextImg from "./images/next.svg";
+import profileImg from "./images/profile.svg";
 
 export const Icons = {
   Profile: Person,
