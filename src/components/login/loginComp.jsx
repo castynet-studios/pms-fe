@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./loginStyles.module.scss";
-import { Button } from "elements";
+import React from 'react'
+import styles from './loginStyles.module.scss'
+import { Button } from 'elements'
 
 export default function Login() {
   return (
@@ -43,5 +43,5 @@ export default function Login() {
         radius="var(--borderRadiusXl)"
       />
     </div>
-  );
+  )
 }

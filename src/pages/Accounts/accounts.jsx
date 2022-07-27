@@ -1,4 +1,4 @@
 function Accounting() {
-  return <>hello</>;
+  return <>hello</>
 }
-export default Accounting;
+export default Accounting

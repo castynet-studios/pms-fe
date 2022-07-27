@@ -1,6 +1,6 @@
-import { Icons } from 'elements';
+import { Icons } from 'elements'
 
-import styles from './ailmentStyles.module.scss';
+import styles from './ailmentStyles.module.scss'
 
 export default function RecurringAilments() {
   return (
@@ -59,5 +59,5 @@ export default function RecurringAilments() {
         </tbody>
       </table>
     </>
-  );
+  )
 }

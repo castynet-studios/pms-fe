@@ -1,6 +1,6 @@
-import EventComp from 'components/event/eventComp';
+import EventComp from 'components/event/eventComp'
 
-import styles from './eventsStyles.module.scss';
+import styles from './eventsStyles.module.scss'
 
 const EventsComp = ({ events }) => {
   return (
@@ -16,7 +16,7 @@ const EventsComp = ({ events }) => {
         <EventComp event={event} key={index} />
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default EventsComp;
+export default EventsComp

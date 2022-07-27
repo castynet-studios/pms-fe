@@ -1,4 +1,4 @@
 function Catalogue() {
-  return <>hello world</>;
+  return <>hello world</>
 }
-export default Catalogue;
+export default Catalogue
