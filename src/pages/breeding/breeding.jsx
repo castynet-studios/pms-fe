@@ -1,4 +1,4 @@
 function Breeding() {
-  return <>hello world</>;
+  return <>hello world</>
 }
-export default Breeding;
+export default Breeding

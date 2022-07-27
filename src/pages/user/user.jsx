@@ -1,5 +1,5 @@
-import userStyle from "./user.module.scss";
-import { Icons } from "elements";
+import userStyle from './user.module.scss'
+import { Icons } from 'elements'
 
 function User() {
   return (
@@ -121,7 +121,7 @@ function User() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default User;
+export default User

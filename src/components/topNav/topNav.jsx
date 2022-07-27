@@ -1,8 +1,8 @@
-import React from "react";
-import navStyle from "./topNav.module.scss";
-import { Button } from "elements";
+import React from 'react'
+import navStyle from './topNav.module.scss'
+import { Button } from 'elements'
 
-import { Icons } from "elements";
+import { Icons } from 'elements'
 
 export default function TopNav() {
   return (
@@ -18,5 +18,5 @@ export default function TopNav() {
         </div>
       </div>
     </nav>
-  );
+  )
 }

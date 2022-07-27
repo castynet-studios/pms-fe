@@ -1,8 +1,8 @@
-import RecurringAilments from 'components/Health/vaccinations';
-import Vaccinations from 'components/Health/recurringAilments';
-import { Icons } from 'elements';
+import RecurringAilments from 'components/Health/vaccinations'
+import Vaccinations from 'components/Health/recurringAilments'
+import { Icons } from 'elements'
 
-import styles from 'components/Health/ailmentStyles.module.scss';
+import styles from 'components/Health/ailmentStyles.module.scss'
 
 export default function Ailments() {
   return (
@@ -152,5 +152,5 @@ export default function Ailments() {
       <RecurringAilments />
       <Vaccinations />
     </div>
-  );
+  )
 }
