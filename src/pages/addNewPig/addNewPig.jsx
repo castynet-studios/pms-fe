@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./addNewPig.module.scss";
+import React from 'react'
+import styles from './addNewPig.module.scss'
 
 const addNewPig = () => {
   return (
@@ -217,7 +217,7 @@ const addNewPig = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default addNewPig;
+export default addNewPig

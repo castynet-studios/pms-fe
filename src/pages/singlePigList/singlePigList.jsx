@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './singlePigList.module.scss';
+import React from 'react'
+import styles from './singlePigList.module.scss'
 
 const SinglePigList = () => {
   return (
@@ -146,7 +146,7 @@ const SinglePigList = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SinglePigList;
+export default SinglePigList

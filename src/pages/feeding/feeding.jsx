@@ -1,4 +1,4 @@
 function Feeding() {
-  return <>hello world</>;
+  return <>hello world</>
 }
-export default Feeding;
+export default Feeding
