@@ -1,5 +1,4 @@
 import { Copyright } from '@styled-icons/boxicons-regular/Copyright'
-import { Person } from '@styled-icons/bootstrap/Person'
 import { GreaterThan } from '@styled-icons/fa-solid/GreaterThan'
 import { LessThan } from '@styled-icons/fa-solid/LessThan'
 import { Home } from '@styled-icons/ionicons-sharp/Home'
@@ -11,6 +10,7 @@ import { Spreadsheet } from '@styled-icons/boxicons-solid/Spreadsheet'
 import { Todo } from '@styled-icons/remix-fill/Todo'
 import { ChevronsRight } from '@styled-icons/boxicons-regular/ChevronsRight'
 import { ArrowheadRightOutline } from 'styled-icons/evaicons-outline'
+import { UserAstronaut } from 'styled-icons/fa-solid'
 import { PiggyBank } from 'styled-icons/fa-solid'
 import { PatchPlus } from 'styled-icons/bootstrap'
 import emailImg from './images/email.svg'
@@ -20,7 +20,7 @@ import nextImg from './images/next.svg'
 import profileImg from './images/profile.svg'
 
 export const Icons = {
-  Profile: Person,
+  Profile: UserAstronaut,
   ArrowRight: GreaterThan,
   ArrowLeft: LessThan,
   Dash: Home,
