@@ -1,3 +1,4 @@
+import { Icons } from 'elements'
 import styles from './style.module.scss'
 
 const FeedingHistory = ({ feedings }) => {
@@ -24,7 +25,8 @@ const FeedingHistory = ({ feedings }) => {
       </div>
       <div className={styles.buttons}>
         <div className={styles.historyButton}>
-          <p>See all the history</p> <p>&gt;&gt;</p>
+          <p>See all the history</p>{' '}
+          <Icons.ChevronsRight className={styles.icon} />
         </div>
       </div>
     </div>

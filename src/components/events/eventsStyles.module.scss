@@ -104,11 +104,9 @@
         box-sizing: border-box;
         border-radius: 0px var(--borderRadius) var(--borderRadius) 0px;
 
-        p {
+        .icon {
           color: var(--darkGreen);
-          mix-blend-mode: normal;
-          width: 10px;
-          height: 16.06px;
+          width: 25px;
         }
       }
     }

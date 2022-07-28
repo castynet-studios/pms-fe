@@ -1,5 +1,7 @@
 import cn from 'classnames'
 
+import { Icons } from 'elements'
+
 import styles from './eventsStyles.module.scss'
 
 const EventsComp = ({ events }) => {
@@ -50,7 +52,7 @@ const EventsComp = ({ events }) => {
               <div>{event.priority}</div>
             </h3>
             <div className={styles.pointers}>
-              <p>&gt;&gt;</p>
+              <Icons.ChevronsRight className={styles.icon} />
             </div>
           </div>
         ))}

@@ -1,9 +1,10 @@
+import { Icons } from 'elements'
 import styles from './style.module.scss'
 
 const RationButtons = ({ name }) => {
   return (
     <div className={styles.rationButton}>
-      <p>{name}</p> <p>&gt;&gt;</p>
+      <p>{name}</p> <Icons.ChevronsRight className={styles.icon} />
     </div>
   )
 }
