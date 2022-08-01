@@ -1,5 +1,5 @@
-import accountStyle from "./accounts.module.scss";
-import { Icons } from "elements";
+import accountStyle from './accounts.module.scss'
+import { Icons } from 'elements'
 
 function Accounting() {
   return (
@@ -144,6 +144,6 @@ function Accounting() {
         </div>
       </div>
     </div>
-  );
+  )
 }
-export default Accounting;
+export default Accounting

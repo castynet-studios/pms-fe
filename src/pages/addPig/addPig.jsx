@@ -1,4 +1,4 @@
 function AddPig() {
-  return <>hello world</>;
+  return <>hello world</>
 }
-export default AddPig;
+export default AddPig

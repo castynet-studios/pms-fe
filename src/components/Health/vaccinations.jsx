@@ -1,6 +1,6 @@
-import { Icons } from 'elements';
+import { Icons } from 'elements'
 
-import styles from 'components/Health/ailmentStyles.module.scss';
+import styles from 'components/Health/ailmentStyles.module.scss'
 
 export default function Vaccinations() {
   return (
@@ -81,5 +81,5 @@ export default function Vaccinations() {
         </tbody>
       </table>
     </>
-  );
+  )
 }

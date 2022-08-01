@@ -1,8 +1,8 @@
-import React from 'react';
-import { ROUTES } from 'routes';
+import React from 'react'
+import { ROUTES } from 'routes'
 
-import SideNav from 'components/sideNav/sideNav';
-import TopNav from 'components/topNav/topNav';
+import SideNav from 'components/sideNav/sideNav'
+import TopNav from 'components/topNav/topNav'
 
 export default function App() {
   return (
@@ -15,5 +15,5 @@ export default function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }

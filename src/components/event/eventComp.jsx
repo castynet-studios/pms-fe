@@ -1,11 +1,11 @@
-import React from "react";
-import styles from "./eventStyles.module.scss";
+import React from 'react'
+import styles from './eventStyles.module.scss'
 
 const EventComp = ({ event }) => {
   return (
     <div className={styles.eventsection}>
       <h3>{event.event}</h3>
-      {event.days !== "" ? (
+      {event.days !== '' ? (
         <h3>
           {event.days}
           <br></br>
@@ -21,9 +21,9 @@ const EventComp = ({ event }) => {
         <p>&gt;&gt;</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default EventComp;
+export default EventComp
 
 // {event.date !== 'Overdue' ? <>{event.date}</> : < className={styles.Overdue}>Overdue</>}

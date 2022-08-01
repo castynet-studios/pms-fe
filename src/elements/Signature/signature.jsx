@@ -1,11 +1,11 @@
-import style from './signature.module.scss';
-import { Icons } from 'elements';
+import style from './signature.module.scss'
+import { Icons } from 'elements'
 
 function Signature({ paddingTop, marginTop }) {
   const sty = {
     paddingTop: paddingTop,
-    marginTop: marginTop
-  };
+    marginTop: marginTop,
+  }
 
   return (
     <div style={sty} className={style.signDiv}>
@@ -14,7 +14,7 @@ function Signature({ paddingTop, marginTop }) {
         Studios
       </p>
     </div>
-  );
+  )
 }
 
-export default Signature;
+export default Signature

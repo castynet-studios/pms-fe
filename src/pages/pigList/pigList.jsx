@@ -1,4 +1,4 @@
 function Pig() {
-  return <>hello world</>;
+  return <>hello world</>
 }
-export default Pig;
+export default Pig
