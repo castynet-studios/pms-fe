@@ -4,7 +4,7 @@ import { Icons } from 'elements'
 function Accounting() {
   return (
     <div className={accountStyle.main}>
-      <div className={accountStyle.accountCard1}>
+      <div className={accountStyle.accountCard}>
         <h1>PROFIT & LOSS</h1>
         <div className={accountStyle.profit}>
           <p>+ KES 15,000</p>
@@ -25,7 +25,7 @@ function Accounting() {
           <img src={Icons.nextImg} alt="next" />
         </div>
       </div>
-      <div className={accountStyle.accountCard2}>
+      <div className={accountStyle.accountCard}>
         <h1>CASH FLOW</h1>
         <div className={accountStyle.cashFlow}>
           <div className={accountStyle.cashIn}>
@@ -54,7 +54,7 @@ function Accounting() {
         </div>
       </div>
 
-      <div className={accountStyle.accountCard3}>
+      <div className={accountStyle.accountCard}>
         <h1>PIGS WORTH</h1>
         <div className={accountStyle.pigWorth}>
           <p> KES 150,000</p>
@@ -77,7 +77,7 @@ function Accounting() {
         </div>
       </div>
 
-      <div className={accountStyle.accountCard4}>
+      <div className={accountStyle.accountCard}>
         <h1>CATALOG</h1>
         <div className={accountStyle.catalog}>
           <p>KES 17,000</p>
@@ -99,7 +99,7 @@ function Accounting() {
         </div>
       </div>
 
-      <div className={accountStyle.accountCard5}>
+      <div className={accountStyle.accountCard}>
         <h1>FARM EQUIPMENT</h1>
         <div className={accountStyle.farmEquipment}>
           <p>KES 1,050,000</p>
@@ -121,7 +121,7 @@ function Accounting() {
         </div>
       </div>
 
-      <div className={accountStyle.accountCard6}>
+      <div className={accountStyle.accountCard}>
         <h1>MISCELLANEOUS</h1>
         <div className={accountStyle.miscellaneous}>
           <p>KES -20,000</p>
