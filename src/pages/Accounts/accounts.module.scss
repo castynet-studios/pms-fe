@@ -5,12 +5,7 @@
   gap: 25px 20px;
 }
 
-.accountCard1,
-.accountCard2,
-.accountCard3,
-.accountCard4,
-.accountCard5,
-.accountCard6 {
+.accountCard {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -23,12 +18,7 @@
   z-index: -2;
 }
 
-.accountCard1 h1,
-.accountCard2 h1,
-.accountCard3 h1,
-.accountCard4 h1,
-.accountCard5 h1,
-.accountCard6 h1 {
+.accountCard h1 {
   font-size: 20px;
   font-weight: bold;
   margin: 0px;
