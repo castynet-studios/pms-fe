@@ -19,6 +19,7 @@
   flex-direction: column;
   gap: 20px;
   background-color: #ffffff;
+  align-items: center;
   margin: 16px 0px;
   width: 100%;
   height: auto;
@@ -27,6 +28,8 @@
 .dataRows {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
   gap: 10px;
   padding: 0 16px 16px 16px;
 }
