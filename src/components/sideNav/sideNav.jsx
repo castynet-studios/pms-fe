@@ -7,7 +7,7 @@ import Signature from 'elements/Signature/signature';
 import styles from './sideNav.module.scss';
 
 export default function SideNav() {
-  const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -52,56 +52,49 @@ export default function SideNav() {
         <div className={styles.menuBar}>
           <div className={styles.menu}>
             <ul>
-              <hr />
               <li>
                 <Link to="/dashboard" key="/Dashboard">
-                  <Icons.Dash className={styles.icon} size="30" />
+                  <Icons.Dash className={styles.icon} size="20" />
                   <span className={styles.text}>Dashboard</span>
                 </Link>
               </li>
-              <hr />
               <li>
                 <Link to="/events" key="/events">
-                  <Icons.Even size="30" className={styles.icon} />
+                  <Icons.Even size="20" className={styles.icon} />
                   <span className={styles.text}>Events</span>
                 </Link>
               </li>
-              <hr />
               <li>
                 <Link to="/health" key="/health">
-                  <Icons.Health size="30" className={styles.icon} />
+                  <Icons.Health size="20" className={styles.icon} />
                   <span className={styles.text}>Health</span>
                 </Link>
               </li>
-              <hr />
               <li>
                 <Link to="/breeding" key="/breeding">
-                  <Icons.Bred size="30" className={styles.icon} />
+                  <Icons.Bred size="20" className={styles.icon} />
                   <span className={styles.text}>Breeding</span>
                 </Link>
               </li>
-              <hr />
               <li>
                 <Link to="/feeding" key="/Feeding">
-                  <Icons.Feeding size="30" className={styles.icon} />
+                  <Icons.Feeding size="20" className={styles.icon} />
                   <span className={styles.text}>Feeding & Drinking</span>
                 </Link>
               </li>
-              <hr />
               <li>
                 <Link to="/catalogue" key="/catalogue">
-                  <Icons.Catalog size="30" className={styles.icon} />
+                  <Icons.Catalog size="20" className={styles.icon} />
                   <span className={styles.text}>Catalogue</span>
                 </Link>
               </li>
-              <hr />
+
               <li>
                 <Link to="/accounting" key="/accounting">
-                  <Icons.Accounts size="30" className={styles.icon} />
+                  <Icons.Accounts size="20" className={styles.icon} />
                   <span className={styles.text}>Accounting</span>
                 </Link>
               </li>
-              <hr />
             </ul>
           </div>
         </div>
