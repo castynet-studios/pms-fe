@@ -22,6 +22,7 @@
       color: var(--grey);
     }
   }
+
   .eventsList {
     display: flex;
     flex-direction: column;
@@ -48,12 +49,14 @@
       .eventDate {
         display: flex;
         justify-content: center;
+
         .dateDays {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
         }
+
         .overdue {
           width: 149px;
           height: 41px;
@@ -63,6 +66,7 @@
           justify-content: center;
           align-items: center;
         }
+
         .today {
           width: 149px;
           height: 41px;
@@ -73,9 +77,11 @@
           align-items: center;
         }
       }
+
       .priority {
         padding-left: 6%;
       }
+
       .multiple {
         width: 149px;
         height: 41px;
@@ -85,13 +91,16 @@
         justify-content: center;
         align-items: center;
       }
+
       .section {
         width: 15%;
       }
+
       .center {
         display: flex;
         justify-content: center;
       }
+
       .pointers {
         display: flex;
         justify-content: center;

@@ -7,7 +7,7 @@ import Signature from 'elements/Signature/signature'
 import styles from './sideNav.module.scss'
 
 export default function SideNav() {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(true)
 
   const showSidebar = () => setSidebar(!sidebar)
 
