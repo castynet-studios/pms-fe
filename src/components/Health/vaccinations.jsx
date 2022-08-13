@@ -8,7 +8,7 @@ export default function Vaccinations() {
       <table className={styles.table}>
         <thead className={styles.th1}>
           <tr>
-            <th colspan="4">VACCINATIONS</th>
+            <th colSpan="4">VACCINATIONS</th>
           </tr>
         </thead>
         <tbody className={styles.td1}>

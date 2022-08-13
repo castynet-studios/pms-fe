@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom'
 
 import Auth from 'pages/auth/auth'
 import Home from 'pages/home/home'
-import Dashboard from 'pages/dashboard/dashboard'
 import Pig from 'pages/pigList/pigList'
 import Catalogue from 'pages/catalogue/catalogue'
 import Accounting from 'pages/Accounts/accounts'
@@ -15,9 +14,8 @@ import AddPig from 'pages/addPig/addPig'
 import SinglePigList from 'pages/singlePigList/singlePigList'
 import User from 'pages/user/user'
 
-const Paths = {
+export const Paths = {
   Home: '/',
-  Dashboard: '/dashboard',
 
   Login: '/login',
   Register: '/register',
@@ -43,7 +41,6 @@ const Paths = {
 export const ROUTES = () => (
   <Routes>
     <Route path={Paths.Home} element={<Home />} />
-    <Route path={Paths.Dashboard} element={<Dashboard />} />
     <Route path={Paths.Login} element={<Auth />} />
     <Route path={Paths.Register} element={<>Register</>} />
     <Route path={Paths.ForgotPassword} element={<>ForgotPassword</>} />

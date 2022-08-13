@@ -10,8 +10,7 @@ export default function Ailments() {
       <table className={styles.table}>
         <thead className={styles.th1}>
           <tr>
-            <th colspan="4">AILMENTS</th>
-            <hr />
+            <th colSpan="4">AILMENTS</th>
           </tr>
         </thead>
         <tbody className={styles.td1}>

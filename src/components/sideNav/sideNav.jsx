@@ -1,35 +1,28 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import cn from 'classnames'
 
-import { Button, Icons } from 'elements'
+import { Button, Icons, useCurrentPath } from 'elements'
 import Signature from 'elements/Signature/signature'
+import { Paths } from 'routes'
 
 import styles from './sideNav.module.scss'
+
+const ShowMenu = ({ setSidebar, sidebar }) => {
+  const showSidebar = () => setSidebar(!sidebar)
+
+  return (
+    <Link to="#" className={styles.toggle}>
+      <Icons.Open size="25" onClick={showSidebar} />
+    </Link>
+  )
+}
 
 export default function SideNav() {
   const [sidebar, setSidebar] = useState(true)
 
-  const showSidebar = () => setSidebar(!sidebar)
-
-  const ShowMenu = () => {
-    return (
-      <Link to="#" className={styles.toggle}>
-        <Icons.Open size="25" onClick={showSidebar} />
-      </Link>
-    )
-  }
-
   const navigate = useNavigate()
-
-  const listPig = () => {
-    let path = '/pigs'
-    navigate(path)
-  }
-
-  const pigAdd = () => {
-    let path = '/pigs/edit'
-    navigate(path)
-  }
+  const path = useCurrentPath()
 
   return (
     <div className={styles.sideNav}>
@@ -46,51 +39,53 @@ export default function SideNav() {
             </div>
           </div>
 
-          <ShowMenu />
+          <ShowMenu {...{ setSidebar, sidebar }} />
         </header>
 
         <div className={styles.menuBar}>
           <div className={styles.menu}>
             <ul>
-              <li>
-                <Link to="/dashboard" key="/Dashboard">
+              <li className={cn({ [styles.active]: path === Paths.Home })}>
+                <Link to={Paths.Home} key={Paths.Home}>
                   <Icons.Dash className={styles.icon} size="20" />
                   <span className={styles.text}>Dashboard</span>
                 </Link>
               </li>
-              <li>
-                <Link to="/events" key="/events">
+              <li className={cn({ [styles.active]: path === Paths.Events })}>
+                <Link to={Paths.Events} key={Paths.Events}>
                   <Icons.Even size="20" className={styles.icon} />
                   <span className={styles.text}>Events</span>
                 </Link>
               </li>
-              <li>
-                <Link to="/health" key="/health">
+              <li className={cn({ [styles.active]: path === Paths.Health })}>
+                <Link to={Paths.Health} key={Paths.Health}>
                   <Icons.Health size="20" className={styles.icon} />
                   <span className={styles.text}>Health</span>
                 </Link>
               </li>
-              <li>
-                <Link to="/breeding" key="/breeding">
+              <li className={cn({ [styles.active]: path === Paths.Breeding })}>
+                <Link to={Paths.Feeding} key={Paths.Feeding}>
                   <Icons.Bred size="20" className={styles.icon} />
                   <span className={styles.text}>Breeding</span>
                 </Link>
               </li>
-              <li>
-                <Link to="/feeding" key="/Feeding">
+              <li className={cn({ [styles.active]: path === Paths.Feeding })}>
+                <Link to={Paths.Feeding} key={Paths.Feeding}>
                   <Icons.Feeding size="20" className={styles.icon} />
                   <span className={styles.text}>Feeding & Drinking</span>
                 </Link>
               </li>
-              <li>
-                <Link to="/catalogue" key="/catalogue">
+              <li className={cn({ [styles.active]: path === Paths.Catalogue })}>
+                <Link to={Paths.Catalogue} key={Paths.Catalogue}>
                   <Icons.Catalog size="20" className={styles.icon} />
                   <span className={styles.text}>Catalogue</span>
                 </Link>
               </li>
 
-              <li>
-                <Link to="/accounting" key="/accounting">
+              <li
+                className={cn({ [styles.active]: path === Paths.Accounting })}
+              >
+                <Link to={Paths.Accounting} key={Paths.Accounting}>
                   <Icons.Accounts size="20" className={styles.icon} />
                   <span className={styles.text}>Accounting</span>
                 </Link>
@@ -105,14 +100,14 @@ export default function SideNav() {
             bgColor="var(--blue)"
             color="white"
             radius="var(--borderRadiusSm)"
-            clickFn={listPig}
+            clickFn={() => navigate('/pigs')}
           />
           <Button
             name={sidebar ? 'Add New Pig' : <Icons.Plus size="25" />}
             bgColor="var(--lightGreen)"
             color="white"
             radius="var(--borderRadiusSm)"
-            clickFn={pigAdd}
+            clickFn={() => navigate('/pigs/edit')}
           />
         </div>
         <div className={styles.sign}>

@@ -8,7 +8,7 @@ export default function RecurringAilments() {
       <table className={styles.table}>
         <thead className={styles.th1}>
           <tr>
-            <th colspan="4">RECURRING AILMENTS</th>
+            <th colSpan="4">RECURRING AILMENTS</th>
           </tr>
         </thead>
         <tbody className={styles.td1}>

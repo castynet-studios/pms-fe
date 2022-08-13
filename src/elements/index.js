@@ -1,4 +1,4 @@
-import { Icons } from './icons/icons'
-import Button from './Button/button'
+export { default as Button } from './Button/button'
 
-export { Icons, Button }
+export * from './icons/icons'
+export * from './usePath/usePath'
