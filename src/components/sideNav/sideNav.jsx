@@ -1,35 +1,35 @@
-import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useState } from 'react'
+import { useNavigate, Link } from 'react-router-dom'
 
-import { Button, Icons } from 'elements';
-import Signature from 'elements/Signature/signature';
+import { Button, Icons } from 'elements'
+import Signature from 'elements/Signature/signature'
 
-import styles from './sideNav.module.scss';
+import styles from './sideNav.module.scss'
 
 export default function SideNav() {
   const [sidebar, setSidebar] = useState(true);
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const showSidebar = () => setSidebar(!sidebar)
 
   const ShowMenu = () => {
     return (
       <Link to="#" className={styles.toggle}>
         <Icons.Open size="25" onClick={showSidebar} />
       </Link>
-    );
-  };
+    )
+  }
 
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const listPig = () => {
-    let path = '/pigs';
-    navigate(path);
-  };
+    let path = '/pigs'
+    navigate(path)
+  }
 
   const pigAdd = () => {
-    let path = '/pigs/edit';
-    navigate(path);
-  };
+    let path = '/pigs/edit'
+    navigate(path)
+  }
 
   return (
     <div className={styles.sideNav}>
@@ -120,5 +120,5 @@ export default function SideNav() {
         </div>
       </nav>
     </div>
-  );
+  )
 }

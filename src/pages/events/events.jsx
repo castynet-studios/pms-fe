@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
-import EventsComp from 'components/events/eventsComp';
+import EventsComp from 'components/events/eventsComp'
 
-import styles from './events.module.scss';
+import styles from './events.module.scss'
 
 const Events = () => {
   const [events] = useState([
@@ -12,7 +12,7 @@ const Events = () => {
       date: 'Overdue',
       assigned: 'Kevin',
       pig: 'A001K',
-      priority: 'High'
+      priority: 'High',
     },
     {
       event: 'Tagging',
@@ -20,7 +20,7 @@ const Events = () => {
       date: '12/01/2022',
       assigned: 'Melvin',
       pig: 'A001K',
-      priority: 'Low'
+      priority: 'Low',
     },
     {
       event: 'Watering',
@@ -28,7 +28,7 @@ const Events = () => {
       date: 'Today',
       assigned: 'Kevin',
       pig: 'A001K',
-      priority: 'Crucial'
+      priority: 'Crucial',
     },
     {
       event: 'Feeding',
@@ -36,7 +36,7 @@ const Events = () => {
       date: 'Overdue',
       assigned: 'Kevin',
       pig: 'A001K',
-      priority: 'High'
+      priority: 'High',
     },
     {
       event: 'Tagging',
@@ -44,7 +44,7 @@ const Events = () => {
       date: '12/01/2022',
       assigned: 'Melvin',
       pig: 'A001K',
-      priority: 'Low'
+      priority: 'Low',
     },
     {
       event: 'Watering',
@@ -52,9 +52,9 @@ const Events = () => {
       date: 'Today',
       assigned: 'Kevin',
       pig: 'A001K',
-      priority: 'Crucial'
-    }
-  ]);
+      priority: 'Crucial',
+    },
+  ])
 
   return (
     <>
@@ -66,6 +66,6 @@ const Events = () => {
         )}
       </div>
     </>
-  );
-};
-export default Events;
+  )
+}
+export default Events

@@ -1,4 +1,4 @@
 function Dashboard() {
-  return <>hello world</>;
+  return <>hello world</>
 }
-export default Dashboard;
+export default Dashboard
