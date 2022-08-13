@@ -1,23 +1,53 @@
 .eventsection {
-  margin: 1em 0;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
+  box-sizing: border-box;
   width: 988px;
   height: 122px;
-  left: 364px;
-  top: 189px;
-  background: var(--white);
-  border: 1px solid var(--grey);
-  box-sizing: border-box;
-  border-radius: var(--borderRadius);
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 27px;
 
   h3 {
-    width: 19.6%;
+    // width: 19.6%;
     font-weight: bold;
   }
 
+  .eventDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .overdue {
+      width: 149px;
+      height: 41px;
+      background: #ff9797;
+      border-radius: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .today {
+      width: 149px;
+      height: 41px;
+      background: #07ce9c;
+      border-radius: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .multiple {
+    width: 149px;
+    height: 41px;
+    background: #c6d800;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .pointers {
     display: flex;
     justify-content: center;
