@@ -12,9 +12,11 @@ const EventsComp = ({ events }) => {
         <h3>Pigs</h3>
         <h3>Priority</h3>
       </div>
-      {events.map((event, index) => (
-        <EventComp event={event} key={index} />
-      ))}
+      <div className={styles.eventsList}>
+        {events.map((event, index) => (
+          <EventComp event={event} key={index} />
+        ))}
+      </div>
     </div>
   )
 }

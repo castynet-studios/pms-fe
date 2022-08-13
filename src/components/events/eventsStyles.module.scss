@@ -25,3 +25,9 @@
     color: var(--grey);
   }
 }
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 23px 0;
+}
