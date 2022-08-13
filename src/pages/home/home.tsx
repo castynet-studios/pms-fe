@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default function Pig() {
+export default function Home() {
   return <>hello world</>
 }

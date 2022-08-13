@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { EventsComp } from 'components'
-import events from '../../events.json'
+import events from 'data/events.json'
 
 import styles from './events.module.scss'
 

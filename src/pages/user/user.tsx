@@ -1,7 +1,10 @@
-import userStyle from './user.module.scss'
+import React from 'react'
+
 import { Icons } from 'elements'
 
-function User() {
+import userStyle from './user.module.scss'
+
+export default function User() {
   return (
     <div className={userStyle.main}>
       <div className={userStyle.userInfo}>
@@ -123,5 +126,3 @@ function User() {
     </div>
   )
 }
-
-export default User

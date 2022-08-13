@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Rations, FeedingHistory } from 'components'
 
-import feedings from '../../feedingHistory.json'
-import rations from '../../rations.json'
+import feedings from 'data/feedingHistory.json'
+import rations from 'data/rations.json'
 
 import styles from './style.module.scss'
 

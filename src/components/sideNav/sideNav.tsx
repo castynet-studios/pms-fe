@@ -115,7 +115,7 @@ export default function SideNav() {
           />
         </div>
         <div className={styles.sign}>
-          <Signature name="Sagana Organic built by Castynet" height="60px" />
+          <Signature />
         </div>
       </nav>
     </div>
