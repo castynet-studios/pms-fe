@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
 :root {
   --font: 'Poppins', sans-serif;
-  --headingFont: 'Lato', sans-serif;
+  --headingFont: 'DM Serif Display', serif;
 
   --borderRadius: 5px;
   --borderRadiusLg: 10px;
@@ -38,6 +39,10 @@ h6 {
   font-family: var(--headingFont);
 }
 
+h1 {
+  font-size: 50px;
+}
+
 body {
   font-family: var(--font);
   background-color: var(--lightGrey);
@@ -63,4 +68,21 @@ a {
 .contentBody {
   padding: 50px;
   width: 100%;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--lightGrey);
+  margin: 5px 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--lightGrey);
+  height: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--darkGreen);
+  border: 2px solid var(--lightGrey);
+  border-radius: var(--borderRadius);
 }

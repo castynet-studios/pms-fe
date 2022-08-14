@@ -23,7 +23,7 @@ const ShowMenu = ({ setSidebar, sidebar }: IShowMenu) => {
 }
 
 export default function SideNav() {
-  const [sidebar, setSidebar] = useState(true)
+  const [sidebar, setSidebar] = useState(false)
 
   const navigate = useNavigate()
   const path = useCurrentPath()

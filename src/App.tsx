@@ -1,6 +1,6 @@
 import React from 'react'
-
 import { ROUTES } from 'routes'
+
 import { SideNav, TopNav } from 'components'
 
 export default function App() {
