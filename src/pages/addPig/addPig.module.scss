@@ -7,7 +7,6 @@
     font-weight: 900;
     font-size: 30px;
     line-height: 36px;
-    /* identical to box height */
     text-align: center;
     text-transform: uppercase;
   }
@@ -43,18 +42,19 @@
     padding: 0;
   }
 
-  /* .line{
-  width: 100%;
-  height: 0px;
-  
-  border: 1px solid #C4C4C4;
-  transform: rotate(-90deg);
-  } */
-
   .line {
     border: 1px solid #c4c4c4;
     transform: rotate(-180deg);
     height: 800px;
+  }
+
+  .smallHeader {
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    margin-top: 10px;
   }
 
   .smallHead {
@@ -89,6 +89,7 @@
   .checkBoxRows {
     display: flex;
     gap: 1rem;
+    padding-bottom: 1rem;
   }
 
   .pigSection {
@@ -97,5 +98,17 @@
 
   .pigDetails {
     padding-left: 1em;
+  }
+
+  .sizeInputs {
+    width: 434px;
+    height: 40px;
+    left: 392px;
+    top: 264px;
+    border: 1px solid #cccccc;
+  }
+
+  form {
+    padding-bottom: 1rem;
   }
 }
