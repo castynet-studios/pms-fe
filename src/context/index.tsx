@@ -14,7 +14,7 @@ interface Props {
 const StateProvider: FC<Props> = ({ children }) => {
   const {
     isLoggedIn,
-    setIsLoggedIn,
+
     authenticating,
     logOut,
     signIn,
@@ -26,7 +26,7 @@ const StateProvider: FC<Props> = ({ children }) => {
     <Context.Provider
       value={{
         isLoggedIn,
-        setIsLoggedIn,
+
         authenticating,
         logOut,
         signIn,

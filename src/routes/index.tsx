@@ -18,10 +18,11 @@ export const Paths = {
   Feeding: '/feeding',
   Events: '/events',
   Breeding: '/breeding',
+  AddPig: '/pigs/add',
 
-  AddPig: '/pigs/edit',
   NotFound: '/404',
 
+  EditPig: (id = ':id') => `/pigs/edit/${id}`,
   SinglePig: (id = ':id') => `/pigs/id/${id}`,
   SingleEvent: (id = ':id') => `/events/id/${id}`,
   SingleProduct: (id = ':id') => `/catalogue/id/${id}`,
@@ -45,6 +46,7 @@ export const ROUTES = () => (
     <Route path={Paths.NotFound} element={<>NotFound</>} />
     <Route path={Paths.SingleEvent()} element={<>SingleEvent</>} />
     <Route path={Paths.SinglePig()} element={<Pages.SinglePigList />} />
+    <Route path={Paths.EditPig()} element={<Pages.AddPig />} />
     <Route path={Paths.SingleProduct()} element={<>SingleProduct</>} />
     <Route path={Paths.NotFound} element={<>404</>} />
     <Route path="*" element={<>404</>} />

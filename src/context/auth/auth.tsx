@@ -11,7 +11,7 @@ export const Auth = (): AuthReturnType => {
 
   const [rawUser, setRawUser] = useState<User>()
   const [user, setUser] = useState<User>()
-  const [token, setToken] = useState<string>()
+  // const [token, setToken] = useState<string>()
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [authenticating, setAuthenticating] = useState(false)
   const [userRef, setUserRef] = useState<DocumentReference<DocumentData>>()
@@ -26,7 +26,7 @@ export const Auth = (): AuthReturnType => {
 
     onAuthStateChanged(auth, user => {
       if (user) {
-        setToken(user.uid)
+        // setToken(user.uid)
         setUserRef(doc(db, 'users', user.uid))
         setRawUser(user)
         getUser(user.uid)
@@ -51,6 +51,8 @@ export const Auth = (): AuthReturnType => {
 
       const Snap = await getDoc(doc(db, 'roles', paramUser?.uid || ''))
       Snap.exists() ? navigate('/admin') : navigate('/')
+      setAuthenticating(false)
+      setIsLoggedIn(true)
     }
   }
   // send user info to db
@@ -63,9 +65,10 @@ export const Auth = (): AuthReturnType => {
 
   // sign the user in then send them to complete acc page or courses
   async function signIn() {
+    setAuthenticating(true)
     fba.setPersistence(auth, fba.browserSessionPersistence)
     const result = await fba.signInWithPopup(auth, fba.provider)
-    setToken(result.user.uid)
+    // setToken(result.user.uid)
     setUserRef(doc(db, 'users', result.user.uid))
     setRawUser(result.user)
     fetchUser(result.user)
@@ -79,7 +82,6 @@ export const Auth = (): AuthReturnType => {
 
   return {
     isLoggedIn,
-    setIsLoggedIn,
     authenticating,
     logOut,
     signIn,

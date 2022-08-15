@@ -5,8 +5,8 @@
   height: 100%;
   padding: 0 0 10px;
   background: var(--white);
-  z-index: 100;
   font-weight: bold;
+  z-index: 9999;
 
   ul {
     position: relative;
@@ -186,7 +186,7 @@
   height: 100%;
   background: var(--white);
   transition: 0.5s;
-  z-index: 100;
+  z-index: 9999;
   width: 50px;
 
   header {

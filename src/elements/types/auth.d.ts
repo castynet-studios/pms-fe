@@ -8,7 +8,6 @@ import { DocumentData, DocumentReference } from 'firebase/firestore'
  */
 export interface AuthReturnType {
   isLoggedIn: boolean
-  setIsLoggedIn: Dispatch<SetStateAction<boolean>>
   authenticating: boolean
   logOut: () => void
   signIn: () => void

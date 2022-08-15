@@ -104,14 +104,14 @@ export default function SideNav() {
             bgColor="var(--blue)"
             color="white"
             radius="var(--borderRadiusSm)"
-            clickFn={() => navigate('/pigs')}
+            clickFn={() => navigate(Paths.Pigs)}
           />
           <Button
             name={sidebar ? 'Add New Pig' : <Icons.Plus size="25" />}
             bgColor="var(--lightGreen)"
             color="white"
             radius="var(--borderRadiusSm)"
-            clickFn={() => navigate('/pigs/edit')}
+            clickFn={() => navigate(Paths.AddPig)}
           />
         </div>
         <div className={styles.sign}>
