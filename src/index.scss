@@ -37,6 +37,11 @@ h4,
 h5,
 h6 {
   font-family: var(--headingFont);
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 h1 {
@@ -46,6 +51,10 @@ h1 {
 body {
   font-family: var(--font);
   background-color: var(--lightGrey);
+
+  &.noScroll {
+    overflow: hidden;
+  }
 }
 
 button {
@@ -55,6 +64,7 @@ button {
 
 a {
   text-decoration: none;
+  margin-bottom: 0;
 }
 
 .contentWrapper {
