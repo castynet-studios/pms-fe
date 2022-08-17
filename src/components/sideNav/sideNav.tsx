@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import cn from 'classnames'
 
@@ -28,6 +28,36 @@ export default function SideNav() {
   const navigate = useNavigate()
   const path = useCurrentPath()
 
+  useEffect(() => {
+    if (sidebar) document.body.classList.add('noScroll')
+    else document.body.classList.remove('noScroll')
+
+    return () => document.body.classList.remove('noScroll')
+  }, [sidebar])
+
+  useEffect(() => {
+    const escKeyListener = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setSidebar(false)
+    }
+    document.addEventListener('keydown', escKeyListener)
+
+    return () => document.removeEventListener('keydown', escKeyListener)
+  }, [sidebar])
+
+  useEffect(() => {
+    const clickListener = (e: MouseEvent) => {
+      if (
+        e.target &&
+        (e.target as HTMLUnknownElement).classList.contains(styles.sidebar)
+      ) {
+        setSidebar(false)
+      }
+    }
+    document.addEventListener('click', clickListener)
+
+    return () => document.removeEventListener('click', clickListener)
+  }, [sidebar])
+
   return (
     <div className={styles.sideNav}>
       <nav className={sidebar ? styles.sidebar : styles.close}>
@@ -48,53 +78,79 @@ export default function SideNav() {
 
         <div className={styles.menuBar}>
           <div className={styles.menu}>
-            <ul>
-              <li className={cn({ [styles.active]: path === Paths.Home })}>
+            <div className={styles.relative}>
+              <div
+                className={cn(styles.navItem, {
+                  [styles.active]: path === Paths.Home,
+                })}
+              >
                 <Link to={Paths.Home} key={Paths.Home}>
                   <Icons.Dash className={styles.icon} size="20" />
                   <span className={styles.text}>Dashboard</span>
                 </Link>
-              </li>
-              <li className={cn({ [styles.active]: path === Paths.Events })}>
+              </div>
+              <div
+                className={cn(styles.navItem, {
+                  [styles.active]: path === Paths.Events,
+                })}
+              >
                 <Link to={Paths.Events} key={Paths.Events}>
                   <Icons.Even size="20" className={styles.icon} />
                   <span className={styles.text}>Events</span>
                 </Link>
-              </li>
-              <li className={cn({ [styles.active]: path === Paths.Health })}>
+              </div>
+              <div
+                className={cn(styles.navItem, {
+                  [styles.active]: path === Paths.Health,
+                })}
+              >
                 <Link to={Paths.Health} key={Paths.Health}>
                   <Icons.Health size="20" className={styles.icon} />
                   <span className={styles.text}>Health</span>
                 </Link>
-              </li>
-              <li className={cn({ [styles.active]: path === Paths.Breeding })}>
-                <Link to={Paths.Feeding} key={Paths.Feeding}>
+              </div>
+              <div
+                className={cn(styles.navItem, {
+                  [styles.active]: path === Paths.Breeding,
+                })}
+              >
+                <Link to={Paths.Breeding} key={Paths.Breeding}>
                   <Icons.Bred size="20" className={styles.icon} />
                   <span className={styles.text}>Breeding</span>
                 </Link>
-              </li>
-              <li className={cn({ [styles.active]: path === Paths.Feeding })}>
+              </div>
+              <div
+                className={cn(styles.navItem, {
+                  [styles.active]: path === Paths.Feeding,
+                })}
+              >
                 <Link to={Paths.Feeding} key={Paths.Feeding}>
                   <Icons.Feeding size="20" className={styles.icon} />
                   <span className={styles.text}>Feeding & Drinking</span>
                 </Link>
-              </li>
-              <li className={cn({ [styles.active]: path === Paths.Catalogue })}>
+              </div>
+              <div
+                className={cn(styles.navItem, {
+                  [styles.active]: path === Paths.Catalogue,
+                })}
+              >
                 <Link to={Paths.Catalogue} key={Paths.Catalogue}>
                   <Icons.Catalog size="20" className={styles.icon} />
                   <span className={styles.text}>Catalogue</span>
                 </Link>
-              </li>
+              </div>
 
-              <li
-                className={cn({ [styles.active]: path === Paths.Accounting })}
+              <div
+                className={cn(styles.navItem, {
+                  [styles.active]: path === Paths.Accounting,
+                })}
               >
                 <Link to={Paths.Accounting} key={Paths.Accounting}>
                   <Icons.Accounts size="20" className={styles.icon} />
                   <span className={styles.text}>Accounting</span>
                 </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
 

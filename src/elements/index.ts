@@ -1,5 +1,5 @@
-export { default as Button } from './Button/button'
-export { default as Signature } from './Signature/signature'
+export { default as Button } from './button/button'
+export { default as Signature } from './signature/signature'
 
 export * from './icons/icons'
 export * from './helpers/usePath'
