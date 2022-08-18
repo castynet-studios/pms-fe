@@ -1,7 +1,7 @@
 import React from 'react'
 import cn from 'classnames'
 
-import { useGreeting } from 'elements'
+import { Greeting } from 'elements'
 import { Calender } from 'components'
 
 import styles from './home.module.scss'
@@ -11,7 +11,9 @@ export default function Home() {
     <div className={styles.wrapper}>
       <div className={styles.cardsWrapper}>
         <div className={styles.intro}>
-          <h1>{useGreeting()} Max</h1>
+          <h1>
+            <Greeting /> Max
+          </h1>
           <div className={cn(styles.card, styles.pigCount)}>
             <p className={styles.pigs}>300</p>
             <p>Pigs in the farm</p>
@@ -45,7 +47,7 @@ export default function Home() {
 
         <div className={styles.card}>
           <h3>Calender</h3>
-            <Calender />
+          <Calender />
         </div>
       </div>
     </div>

@@ -58,6 +58,10 @@ export default function SideNav() {
     return () => document.removeEventListener('click', clickListener)
   }, [sidebar])
 
+  useEffect(() => {
+    if (!Object.values(Paths).includes(path)) setSidebar(true)
+  }, [path])
+
   return (
     <div className={styles.sideNav}>
       <nav className={sidebar ? styles.sidebar : styles.close}>

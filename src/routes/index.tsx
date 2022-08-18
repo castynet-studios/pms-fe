@@ -48,8 +48,8 @@ export const ROUTES = () => (
     <Route path={Paths.SinglePig()} element={<Pages.SinglePigList />} />
     <Route path={Paths.EditPig()} element={<Pages.AddPig />} />
     <Route path={Paths.SingleProduct()} element={<>SingleProduct</>} />
-    <Route path={Paths.NotFound} element={<>404</>} />
-    <Route path="*" element={<>404</>} />
+    <Route path={Paths.NotFound} element={<Pages.NotFound />} />
+    <Route path="*" element={<Pages.NotFound />} />
   </Routes>
 )
 
