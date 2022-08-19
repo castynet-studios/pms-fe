@@ -1,7 +1,7 @@
 import React from 'react'
 import cn from 'classnames'
 
-import { useGreeting } from 'elements'
+import { Greeting } from 'elements'
 import { Calender } from 'components'
 
 import styles from './home.module.scss'
@@ -11,7 +11,9 @@ export default function Home() {
     <div className={styles.wrapper}>
       <div className={styles.cardsWrapper}>
         <div className={styles.intro}>
-          <h1>{useGreeting()} Max</h1>
+          <h1>
+            <Greeting /> Max
+          </h1>
           <div className={cn(styles.card, styles.pigCount)}>
             <p className={styles.pigs}>300</p>
             <p>Pigs in the farm</p>
@@ -20,10 +22,12 @@ export default function Home() {
 
         <div className={styles.card}>
           <h3>Upcoming events</h3>
+          <p>Todo: add events from api</p>
         </div>
 
         <div className={styles.card}>
           <h3>Notable pigs</h3>
+          <p>Todo: add pigs from api</p>
         </div>
       </div>
 
@@ -37,15 +41,13 @@ export default function Home() {
           <h3>Actions</h3>
           <button>Update pigs</button>
           <button>Update feeding</button>
-          <button>Update Catalogue</button>
           <button>Update Health</button>
-          <button>Update Accounting</button>
-          <button>Update Breeding</button>
+          <button>Add transaction</button>
         </div>
 
         <div className={styles.card}>
           <h3>Calender</h3>
-            <Calender />
+          <Calender />
         </div>
       </div>
     </div>

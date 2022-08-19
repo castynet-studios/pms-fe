@@ -58,6 +58,10 @@ export default function SideNav() {
     return () => document.removeEventListener('click', clickListener)
   }, [sidebar])
 
+  useEffect(() => {
+    if (!Object.values(Paths).includes(path)) setSidebar(true)
+  }, [path])
+
   return (
     <div className={styles.sideNav}>
       <nav className={sidebar ? styles.sidebar : styles.close}>
@@ -127,16 +131,6 @@ export default function SideNav() {
                 <Link to={Paths.Feeding} key={Paths.Feeding}>
                   <Icons.Feeding size="20" className={styles.icon} />
                   <span className={styles.text}>Feeding & Drinking</span>
-                </Link>
-              </div>
-              <div
-                className={cn(styles.navItem, {
-                  [styles.active]: path === Paths.Catalogue,
-                })}
-              >
-                <Link to={Paths.Catalogue} key={Paths.Catalogue}>
-                  <Icons.Catalog size="20" className={styles.icon} />
-                  <span className={styles.text}>Catalogue</span>
                 </Link>
               </div>
 

@@ -1,148 +1,94 @@
 import React from 'react'
-import { Icons } from 'elements'
+import cn from 'classnames'
 
-import accountStyle from './accounts.module.scss'
+import styles from './accounts.module.scss'
 
 function Accounting() {
   return (
-    <div className={accountStyle.main}>
-      <div className={accountStyle.accountCard}>
-        <h1>PROFIT & LOSS</h1>
-        <div className={accountStyle.profit}>
-          <p>+ KES 15,000</p>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>2021</p>
-          <h4>- KES 23,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>2020</p>
-          <h4>- KES 11,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>2021</p>
-          <h4>+ KES 17,000</h4>
-        </div>
-        <div className={accountStyle.next}>
-          <img src={Icons.nextImg} alt="next" />
-        </div>
-      </div>
-      <div className={accountStyle.accountCard}>
-        <h1>CASH FLOW</h1>
-        <div className={accountStyle.cashFlow}>
-          <div className={accountStyle.cashIn}>
-            <p>CASH IN</p>
-            <h4>KES 23,000</h4>
+    <div className={styles.main}>
+      <div className={styles.wrapperCard}>
+        <div className={styles.accountCard}>
+          <h1>Profit & loss</h1>
+          <div className={styles.profit}>
+            <p className="monoSpace">+ KES 15,000</p>
           </div>
-          <div className={accountStyle.cashOut}>
-            <p>CASH OUT</p>
-            <h4>KES 13,000</h4>
+          <div className={styles.cardInfo}>
+            <p>2021</p>
+            <p className={cn('monoSpace', styles.number)}>- KES 23,000</p>
+          </div>
+          <div className={styles.cardInfo}>
+            <p>2020</p>
+            <p className={cn('monoSpace', styles.number)}>- KES 11,000</p>
+          </div>
+          <div className={styles.cardInfo}>
+            <p>2021</p>
+            <p className={cn('monoSpace', styles.number)}>+ KES 17,000</p>
           </div>
         </div>
-        <div className={accountStyle.cardInfo}>
-          <p>PIG SALE</p>
-          <h4>+ KES 23,000</h4>
+        <div className={styles.accountCard}>
+          <h1>Cash flow</h1>
+          <div className={styles.cashFlow}>
+            <div className={styles.cashIn}>
+              <p>CASH IN</p>
+              <p className={cn('monoSpace', styles.number)}>KES 23,000</p>
+            </div>
+            <div className={styles.cashOut}>
+              <p>CASH OUT</p>
+              <p className={cn('monoSpace', styles.number)}>KES 13,000</p>
+            </div>
+          </div>
+          <div className={styles.cardInfo}>
+            <p>PIG SALE</p>
+            <p className={cn('monoSpace', styles.number)}>+ KES 23,000</p>
+          </div>
+          <div className={styles.cardInfo}>
+            <p>CALCIUM</p>
+            <p className={cn('monoSpace', styles.number)}>- KES 23,000</p>
+          </div>
+          <div className={styles.cardInfo}>
+            <p>VACCINE</p>
+            <p className={cn('monoSpace', styles.number)}>+ KES 17,000</p>
+          </div>
         </div>
-        <div className={accountStyle.cardInfo}>
-          <p>CALCIUM</p>
-          <h4>- KES 23,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>VACCINE</p>
-          <h4>+ KES 17,000</h4>
-        </div>
-        <div className={accountStyle.next}>
-          <img src={Icons.nextImg} alt="next" />
-        </div>
-      </div>
-
-      <div className={accountStyle.accountCard}>
-        <h1>PIGS WORTH</h1>
-        <div className={accountStyle.pigWorth}>
-          <p> KES 150,000</p>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>JAMES</p>
-          <h4>KES 23,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>ESTHER</p>
-          <h4>KES 3,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>KELVIN</p>
-          <h4>KES 2,500</h4>
-        </div>
-
-        <div className={accountStyle.next}>
-          <img src={Icons.nextImg} alt="next" />
-        </div>
-      </div>
-
-      <div className={accountStyle.accountCard}>
-        <h1>CATALOG</h1>
-        <div className={accountStyle.catalog}>
-          <p>KES 17,000</p>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>VACCINE</p>
-          <h4>KES 23,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>TAGS</p>
-          <h4>KES 3,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>FEED</p>
-          <h4>KES 2,500</h4>
-        </div>
-        <div className={accountStyle.next}>
-          <img src={Icons.nextImg} alt="next" />
+        <div className={styles.accountCard}>
+          <h1>Pigs Worth</h1>
+          <div className={styles.pigWorth}>
+            <p className="monoSpace"> KES 150,000</p>
+          </div>
+          <div className={styles.cardInfo}>
+            <p>JAMES</p>
+            <p className={cn('monoSpace', styles.number)}>KES 23,000</p>
+          </div>
+          <div className={styles.cardInfo}>
+            <p>ESTHER</p>
+            <p className={cn('monoSpace', styles.number)}>KES 3,000</p>
+          </div>
+          <div className={styles.cardInfo}>
+            <p>KELVIN</p>
+            <p className={cn('monoSpace', styles.number)}>KES 2,500</p>
+          </div>
         </div>
       </div>
-
-      <div className={accountStyle.accountCard}>
-        <h1>FARM EQUIPMENT</h1>
-        <div className={accountStyle.farmEquipment}>
-          <p>KES 1,050,000</p>
+      <div className={styles.infoWrapper}>
+        <div className={styles.card}>
+          <h3>Transactions</h3>
+          <p>add transactions and their dates</p>
+          <ul>
+            <li>date</li>
+            <li>title</li>
+            <li>amount</li>
+          </ul>
         </div>
-        <div className={accountStyle.cardInfo}>
-          <p>TRUCK</p>
-          <h4>KES 230,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>HEATER</p>
-          <h4>KES 13,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>FANS</p>
-          <h4>KES 24,500</h4>
-        </div>
-        <div className={accountStyle.next}>
-          <img src={Icons.nextImg} alt="next" />
-        </div>
-      </div>
-
-      <div className={accountStyle.accountCard}>
-        <h1>MISCELLANEOUS</h1>
-        <div className={accountStyle.miscellaneous}>
-          <p>KES -20,000</p>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>SALARY</p>
-          <h4>- KES 23,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>DEATH - A001K</p>
-          <h4>KES 3,000</h4>
-        </div>
-        <div className={accountStyle.cardInfo}>
-          <p>VET</p>
-          <h4>- KES 2,500</h4>
-        </div>
-
-        <div className={accountStyle.next}>
-          <img src={Icons.nextImg} alt="next" />
+        <div className={styles.card}>
+          <h3>Pigs</h3>
+          <p>Todo add a list of pigs and their valuations</p>
+          <ul>
+            <li>tag number</li>
+            <li>weight</li>
+            <li>age</li>
+            <li>projected price</li>
+            <li>investment</li>
+          </ul>
         </div>
       </div>
     </div>
