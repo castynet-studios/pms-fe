@@ -1,0 +1,70 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+
+  .cardsWrapper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .card {
+    background-color: var(--white);
+    width: fit-content;
+    padding: 20px;
+    border-radius: var(--borderRadius);
+    border: 1px solid var(--grey);
+    width: calc(100% - 40px);
+
+    h3 {
+      margin: -10px 0 10px 0;
+      padding-bottom: 10px;
+      font-size: 25px;
+
+      &::after {
+        content: '';
+        display: block;
+        width: calc(100% + 40px);
+        height: 1px;
+        background-color: var(--grey);
+        margin-left: -20px;
+      }
+    }
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .pigCount {
+    padding-bottom: 30px;
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
+    .pigs {
+      font-size: 35px;
+    }
+  }
+
+  .actions {
+    button {
+      display: block;
+      padding: 8px 20px;
+      margin: 2px;
+      border: none;
+      width: 100%;
+      background-color: var(--lightBlue);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: var(--darkGreen);
+        color: var(--white);
+      }
+    }
+  }
+}

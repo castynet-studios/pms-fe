@@ -1,0 +1,133 @@
+.main {
+  .wrapperCard {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    border: 1px solid var(--grey);
+    border-radius: var(--borderRadius);
+
+    .accountCard {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      border-radius: 5px;
+      margin: 0 0 20px 0;
+
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 5px;
+        margin-left: 10px;
+      }
+    }
+
+    .profit {
+      height: 70px;
+      width: 100%;
+      margin-top: 10px;
+      background: var(--lightGreen);
+      align-items: center;
+
+      p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--white);
+        padding-top: 15px;
+      }
+    }
+
+    .cardInfo {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      padding-left: 10px;
+      color: #a0a0a0;
+    }
+
+    .cashFlow {
+      display: flex;
+      flex-direction: row;
+      background-color: var(--lightGrey);
+      width: 100%;
+      height: 70px;
+      margin-top: 10px;
+      justify-content: space-around;
+    }
+
+    .cashIn,
+    .cashOut {
+      margin-top: 10px;
+
+      p {
+        font-size: 18px;
+      }
+
+      &.cashIn {
+        p {
+          color: var(--lightGreen);
+        }
+      }
+
+      &.cashOut {
+        p {
+          color: var(--red);
+        }
+      }
+    }
+
+    .pigWorth,
+    .farmEquipment {
+      height: 70px;
+      width: 100%;
+      margin-top: 10px;
+      background: var(--darkGrey);
+
+      p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--white);
+        padding-top: 15px;
+      }
+    }
+
+    .number {
+      color: var(--black);
+      font-size: 18px;
+    }
+  }
+
+  .infoWrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+
+    .card {
+      background-color: var(--white);
+      width: fit-content;
+      padding: 20px;
+      border-radius: var(--borderRadius);
+      border: 1px solid var(--grey);
+      width: calc(100% - 40px);
+
+      h3 {
+        margin: -10px 0 10px 0;
+        padding-bottom: 10px;
+        font-size: 25px;
+
+        &::after {
+          content: '';
+          display: block;
+          width: calc(100% + 40px);
+          height: 1px;
+          background-color: var(--grey);
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+}

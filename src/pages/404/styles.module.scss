@@ -1,0 +1,21 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  gap: 1px;
+  border: 1px solid var(--grey);
+  background-color: var(--grey);
+  width: fit-content;
+  margin: 0 0 0 260px;
+
+  p {
+    background-color: var(--white);
+    text-align: center;
+    line-height: 50px;
+    z-index: 999999;
+  }
+
+  .selected {
+    background-color: var(--lightGreen);
+    color: #fff;
+  }
+}
