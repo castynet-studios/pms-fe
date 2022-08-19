@@ -1,0 +1,62 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  text-align: center;
+  justify-content: center;
+}
+
+.minor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+  align-items: center;
+  margin: 16px 0px;
+  width: 100%;
+  height: auto;
+}
+
+.dataRows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  gap: 10px;
+  padding: 0 16px 16px 16px;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+}
+
+.register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+  margin: 16px 0px;
+  cursor: pointer;
+}
+
+.register h4 {
+  font-size: 1.2em;
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+}
