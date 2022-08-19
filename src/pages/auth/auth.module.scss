@@ -1,5 +1,5 @@
 .wrapper {
-  width: 500px;
+  width: 400px;
   max-width: 90vw;
   position: absolute;
   top: 50%;
@@ -7,21 +7,9 @@
   transform: translate(-50%, -50%);
   border: 1px solid var(--grey);
   border-radius: var(--borderRadius);
-  height: 500px;
-  padding: 15px;
+  padding: 20px;
   background-color: var(--white);
-}
-
-.innerdiv {
-  width: 350px;
-  max-width: 80vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid var(--grey);
-  border-radius: var(--borderRadius);
-  height: 350px;
-  padding: 15px;
-  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
