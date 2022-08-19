@@ -12,7 +12,6 @@ export const Paths = {
 
   User: '/user',
   Pigs: '/pigs',
-  Catalogue: '/catalogue',
   Accounting: '/accounting',
   Health: '/health',
   Feeding: '/feeding',
@@ -36,7 +35,6 @@ export const ROUTES = () => (
     <Route path={Paths.ForgotPassword} element={<>ForgotPassword</>} />
     <Route path={Paths.User} element={<Pages.User />} />
     <Route path={Paths.Pigs} element={<Pages.Pig />} />
-    <Route path={Paths.Catalogue} element={<Pages.Catalogue />} />
     <Route path={Paths.Accounting} element={<Pages.Accounting />} />
     <Route path={Paths.Health} element={<Pages.Health />} />
     <Route path={Paths.Feeding} element={<Pages.Feeding />} />

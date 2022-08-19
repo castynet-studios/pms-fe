@@ -133,16 +133,6 @@ export default function SideNav() {
                   <span className={styles.text}>Feeding & Drinking</span>
                 </Link>
               </div>
-              <div
-                className={cn(styles.navItem, {
-                  [styles.active]: path === Paths.Catalogue,
-                })}
-              >
-                <Link to={Paths.Catalogue} key={Paths.Catalogue}>
-                  <Icons.Catalog size="20" className={styles.icon} />
-                  <span className={styles.text}>Catalogue</span>
-                </Link>
-              </div>
 
               <div
                 className={cn(styles.navItem, {

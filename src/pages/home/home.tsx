@@ -22,10 +22,12 @@ export default function Home() {
 
         <div className={styles.card}>
           <h3>Upcoming events</h3>
+          <p>Todo: add events from api</p>
         </div>
 
         <div className={styles.card}>
           <h3>Notable pigs</h3>
+          <p>Todo: add pigs from api</p>
         </div>
       </div>
 
@@ -39,10 +41,8 @@ export default function Home() {
           <h3>Actions</h3>
           <button>Update pigs</button>
           <button>Update feeding</button>
-          <button>Update Catalogue</button>
           <button>Update Health</button>
-          <button>Update Accounting</button>
-          <button>Update Breeding</button>
+          <button>Add transaction</button>
         </div>
 
         <div className={styles.card}>

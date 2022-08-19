@@ -1,6 +1,5 @@
 export { default as Auth } from './auth/auth'
 export { default as Pig } from './pigList/pigList'
-export { default as Catalogue } from './catalogue/catalogue'
 export { default as Accounting } from './accounts/accounts'
 export { default as Health } from './health/health'
 export { default as Feeding } from './feeding/feeding'

@@ -1,139 +1,133 @@
 .main {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-evenly;
-  gap: 25px 20px;
-}
+  .wrapperCard {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    border: 1px solid var(--grey);
+    border-radius: var(--borderRadius);
 
-.accountCard {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  background-color: rgb(255, 255, 255);
-  height: 350px;
-  width: 300px;
-  border: 1px solid rgb(212, 212, 212);
-  margin: 0px;
-  border-radius: 5px;
-  z-index: -2;
-}
+    .accountCard {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      border-radius: 5px;
+      margin: 0 0 20px 0;
 
-.accountCard h1 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-  padding-top: 5px;
-}
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 5px;
+        margin-left: 10px;
+      }
+    }
 
-.profit {
-  height: 70px;
-  width: 100%;
-  margin-top: 10px;
-  background: #0b9673;
-  align-items: center;
-}
+    .profit {
+      height: 70px;
+      width: 100%;
+      margin-top: 10px;
+      background: var(--lightGreen);
+      align-items: center;
 
-.profit p {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 24px;
-  color: #ffffff;
-  padding-top: 15px;
-}
+      p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--white);
+        padding-top: 15px;
+      }
+    }
 
-.cardInfo {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  padding-left: 10px;
-}
+    .cardInfo {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      padding-left: 10px;
+      color: #a0a0a0;
+    }
 
-.cardInfo p {
-  color: #a0a0a0;
-}
+    .cashFlow {
+      display: flex;
+      flex-direction: row;
+      background-color: var(--lightGrey);
+      width: 100%;
+      height: 70px;
+      margin-top: 10px;
+      justify-content: space-around;
+    }
 
-.cardInfo h4 {
-  color: #000000;
-  font-size: 18px;
-  font-weight: 700;
-}
+    .cashIn,
+    .cashOut {
+      margin-top: 10px;
 
-.next {
-  height: 25px;
-  background-color: #3ccece;
-  border-radius: 5px 0px 5px 0px;
-  width: 60px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  cursor: pointer;
-}
+      p {
+        font-size: 18px;
+      }
 
-.next img {
-  height: 16px;
-  width: 20px;
-  padding-top: 2px;
-  margin-left: 30%;
-}
+      &.cashIn {
+        p {
+          color: var(--lightGreen);
+        }
+      }
 
-.cashFlow {
-  display: flex;
-  flex-direction: row;
-  background-color: #777777;
-  width: 100%;
-  height: 70px;
-  margin-top: 10px;
-  justify-content: space-around;
-}
+      &.cashOut {
+        p {
+          color: var(--red);
+        }
+      }
+    }
 
-.cashIn,
-.cashOut {
-  margin-top: 10px;
-}
+    .pigWorth,
+    .farmEquipment {
+      height: 70px;
+      width: 100%;
+      margin-top: 10px;
+      background: var(--darkGrey);
 
-.cashIn p {
-  color: #07ce9c;
-  font-size: 15px;
-}
+      p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--white);
+        padding-top: 15px;
+      }
+    }
 
-.cashIn h4 {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 600;
-}
+    .number {
+      color: var(--black);
+      font-size: 18px;
+    }
+  }
 
-.cashOut p {
-  color: #ff9797;
-  font-size: 15px;
-}
+  .infoWrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
 
-.cashOut h4 {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 600;
-}
+    .card {
+      background-color: var(--white);
+      width: fit-content;
+      padding: 20px;
+      border-radius: var(--borderRadius);
+      border: 1px solid var(--grey);
+      width: calc(100% - 40px);
 
-.pigWorth,
-.catalog,
-.farmEquipment,
-.miscellaneous {
-  height: 70px;
-  width: 100%;
-  margin-top: 10px;
-  background: #777777;
-}
+      h3 {
+        margin: -10px 0 10px 0;
+        padding-bottom: 10px;
+        font-size: 25px;
 
-.pigWorth p,
-.catalog p,
-.farmEquipment p,
-.miscellaneous p {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 24px;
-  color: #ffffff;
-  padding-top: 15px;
+        &::after {
+          content: '';
+          display: block;
+          width: calc(100% + 40px);
+          height: 1px;
+          background-color: var(--grey);
+          margin-left: -20px;
+        }
+      }
+    }
+  }
 }
