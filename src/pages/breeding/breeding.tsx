@@ -1,6 +1,6 @@
 import React from 'react'
 
-import breedingStyles from './breeding.module.css'
+import breedingStyles from './breeding.module.scss'
 
 function Breeding() {
   return (
