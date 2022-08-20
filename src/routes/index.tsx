@@ -51,7 +51,7 @@ export const ROUTES = () => (
 export const AuthROUTES = () => (
   <Routes>
     <Route path={Paths.Login} element={<Pages.Auth />} />
-    <Route path={Paths.Register} element={<>Register</>} />
+    <Route path={Paths.Register} element={<Pages.Auth />} />
     <Route path={Paths.ForgotPassword} element={<>ForgotPassword</>} />
     <Route path="*" element={<Pages.Auth />} />
   </Routes>
