@@ -6,12 +6,11 @@ import styles from './ailmentStyles.module.scss'
 
 export default function RecurringAilments() {
   return (
-    <>
+    <div className={styles.card}>
+      <h3>Recurring ailments</h3>
       <table className={styles.table}>
         <thead className={styles.th1}>
-          <tr>
-            <th colSpan={4}>RECURRING AILMENTS</th>
-          </tr>
+          <tr></tr>
         </thead>
         <tbody className={styles.td1}>
           <tr>
@@ -60,6 +59,6 @@ export default function RecurringAilments() {
           </tr>
         </tbody>
       </table>
-    </>
+    </div>
   )
 }

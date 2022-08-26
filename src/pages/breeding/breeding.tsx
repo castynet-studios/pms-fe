@@ -16,6 +16,14 @@ function Breeding() {
               <th>Index</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
       </div>
 
@@ -31,6 +39,14 @@ function Breeding() {
               <th>Index</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div className={breedingStyles.card}>
@@ -45,6 +61,14 @@ function Breeding() {
               <th>Dead</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div className={breedingStyles.card}>
@@ -58,6 +82,14 @@ function Breeding() {
               <th>Index</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div className={breedingStyles.card}>
@@ -71,6 +103,14 @@ function Breeding() {
               <th>Index</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div className={breedingStyles.card}>
@@ -84,6 +124,14 @@ function Breeding() {
               <th>Index</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>

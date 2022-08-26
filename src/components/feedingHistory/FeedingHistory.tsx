@@ -7,7 +7,7 @@ import styles from './style.module.scss'
 const FeedingHistory = ({ feedings }: any) => {
   return (
     <div className={styles.divWrapper}>
-      <div className={styles.heading}>FEEDING HISTORY</div>
+      <h3 className={styles.heading}>Feeding history</h3>
       <div className={styles.headings}>
         <div className={styles.tag}>Tag</div>
         <div className={styles.ration}>Ration</div>
