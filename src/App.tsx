@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react'
-import { ROUTES, Paths, AuthROUTES } from 'routes'
+import { ROUTES, AuthROUTES } from 'routes'
 
-import { useCurrentPath } from 'elements'
-
+// import { useCurrentPath } from 'elements'
 import { SideNav, TopNav } from 'components'
+import { useApp } from 'context'
 
 const Wrapper = ({ children }: { children: ReactNode }) => {
   return (
@@ -18,15 +18,16 @@ const Wrapper = ({ children }: { children: ReactNode }) => {
 }
 
 export default function App() {
-  const currentPath = useCurrentPath()
-  const paths = [Paths.Login, Paths.Register, Paths.ForgotPassword]
-  const isAuthPage = paths.includes(currentPath)
+  // const currentPath = useCurrentPath()
+  // const paths = [Paths.Login, Paths.Register, Paths.ForgotPassword]
+  // const isAuthPage = paths.includes(currentPath)
+  const { isLoggedIn } = useApp()
 
-  return !isAuthPage ? (
+  return !isLoggedIn ? (
+    <AuthROUTES />
+  ) : (
     <Wrapper>
       <ROUTES />
     </Wrapper>
-  ) : (
-    <AuthROUTES />
   )
 }

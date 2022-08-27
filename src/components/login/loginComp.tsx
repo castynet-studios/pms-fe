@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { Button, useCurrentPath } from 'elements'
+import { useApp } from 'context'
 
 import styles from './loginStyles.module.scss'
 
@@ -12,6 +13,7 @@ export default function Login() {
   const inActivePage = page === pages[0] ? pages[1] : pages[0]
   const path = useCurrentPath()
   const navigate = useNavigate()
+  const { signInWithGoogle } = useApp()
 
   useEffect(() => {
     if (path === '/register') setPage(pages[1])
@@ -56,6 +58,13 @@ export default function Login() {
               id="password"
               name="password"
             />
+            <div className={styles.conditions}>
+              <p>Must be at least 8 characters long</p>
+              <p>Must have one uppercase character</p>
+              <p>Must have one lowercase character</p>
+              <p>Must have one number</p>
+              <p>Passwords must match</p>
+            </div>
           </>
         )}
       </div>
@@ -71,11 +80,12 @@ export default function Login() {
           bgColor="var(--blue)"
           color="white"
           radius="var(--borderRadiusXl)"
+          clickFn={navigateToInactive}
         />
       </div>
 
       <div className={styles.google}>
-        <button>{page} with Google</button>
+        <button onClick={() => signInWithGoogle()}>{page} with Google</button>
       </div>
     </div>
   )

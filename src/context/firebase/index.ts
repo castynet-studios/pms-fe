@@ -8,6 +8,8 @@ import {
   browserSessionPersistence,
   onAuthStateChanged,
   signOut,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
 } from 'firebase/auth'
 import {
   doc,
@@ -50,4 +52,6 @@ export const fba = {
   doc,
   auth,
   provider,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
 }

@@ -9,7 +9,6 @@ function Auth() {
   return (
     <div className={styles.wrapper}>
       <Login />
-
       <Signature />
     </div>
   )

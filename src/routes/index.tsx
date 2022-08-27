@@ -11,6 +11,7 @@ export const Paths = {
   ForgotPassword: '/forgot-password',
 
   User: '/user',
+  Admin: '/admin',
   Pigs: '/pigs',
   Accounting: '/accounting',
   Health: '/health',

@@ -1,16 +1,26 @@
-import { Dispatch, SetStateAction } from 'react'
 import { User } from 'firebase/auth'
 import { DocumentData, DocumentReference } from 'firebase/firestore'
+
+/**
+ * To sign in with email and password.
+ * @public
+ */
+export type TSignInWithEP = {
+  email: string
+  password: string
+}
 
 /**
  * The Expected return from the auth part of the context.
  * @public
  */
-export interface AuthReturnType {
+export interface IAuthReturnType {
   isLoggedIn: boolean
   authenticating: boolean
   logOut: () => void
-  signIn: () => void
+  signInWithGoogle: () => void
+  signInWithEP: ({ email, password }: TSignInWithEP) => void
+  signUpWithEP: ({ email, password }: TSignInWithEP) => void
   user?: User
   userRef?: DocumentReference<DocumentData>
 }
@@ -19,7 +29,7 @@ export interface AuthReturnType {
  * The content added to the db from the google auth.
  * @public
  */
-export interface Content {
+export interface IContent {
   displayName?: string | null
   phoneNumber?: string | null
   avatar?: string | null

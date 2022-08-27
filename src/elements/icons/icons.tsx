@@ -13,6 +13,10 @@ import { ArrowheadRightOutline } from 'styled-icons/evaicons-outline'
 import { UserAstronaut } from 'styled-icons/fa-solid'
 import { PiggyBank } from 'styled-icons/fa-solid'
 import { PatchPlus } from 'styled-icons/bootstrap'
+import { SquareOutline } from '@styled-icons/evaicons-outline/SquareOutline'
+import { CheckmarkSquare2Outline } from 'styled-icons/evaicons-outline'
+import { ExclamationDiamond } from 'styled-icons/bootstrap'
+
 import emailImg from './images/email.svg'
 import phoneImg from './images/phone.svg'
 import passwordImg from './images/password.svg'
@@ -40,4 +44,7 @@ export const Icons = {
   passwordImg,
   profileImg,
   nextImg,
+  EmptyCheck: SquareOutline,
+  Check: CheckmarkSquare2Outline,
+  Exclamation: ExclamationDiamond,
 }
