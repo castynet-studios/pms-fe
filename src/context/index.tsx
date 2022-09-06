@@ -1,9 +1,9 @@
 import React, { createContext, FC, useContext } from 'react'
 
-import { AppContext } from 'elements/types'
+import { IAppContext } from 'elements'
 import { Auth } from './auth/auth'
 
-const Context = createContext<AppContext>({} as AppContext)
+const Context = createContext<IAppContext>({} as IAppContext)
 
 export const useApp = () => useContext(Context)
 
@@ -14,10 +14,9 @@ interface Props {
 const StateProvider: FC<Props> = ({ children }) => {
   const {
     isLoggedIn,
-
     authenticating,
     logOut,
-    signIn,
+    signInWithGoogle,
     user,
     userRef,
   } = Auth()
@@ -26,10 +25,9 @@ const StateProvider: FC<Props> = ({ children }) => {
     <Context.Provider
       value={{
         isLoggedIn,
-
         authenticating,
         logOut,
-        signIn,
+        signInWithGoogle,
         user,
         userRef,
       }}

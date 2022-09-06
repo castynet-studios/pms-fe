@@ -15,7 +15,7 @@ const RationButtons = ({ name }: any) => {
 const Rations = ({ rations }: any) => {
   return (
     <div className={styles.divWrapper}>
-      <div className={styles.heading}>RATIONS</div>
+      <h3 className={styles.heading}>Rations</h3>
       <div className={styles.headings}>
         <div className={styles.tag}>Tag</div>
         <div className={styles.ration}>Ration</div>

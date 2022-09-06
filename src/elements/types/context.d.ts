@@ -1,8 +1,8 @@
-export interface AppContext {
+export interface IAppContext {
   authenticating: boolean
   isLoggedIn: boolean
   logOut: () => void
-  signIn: () => void
+  signInWithGoogle: () => void
   user: User
   userRef: DocumentReference<DocumentData>
 }

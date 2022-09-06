@@ -12,5 +12,77 @@
     width: 40px;
     display: inline-block;
     height: 40px;
+    position: relative;
+
+    .user {
+      position: absolute;
+      right: -22px;
+      top: 60px;
+      background-color: var(--darkGreen);
+      box-shadow: rgb(107 107 107 / 32%) 0px 8px 12px 0px;
+      border-bottom-left-radius: var(--borderRadius);
+      border-bottom-right-radius: var(--borderRadius);
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+      pointer-events: none;
+      padding: 10px 0;
+
+      &.active {
+        top: 45px;
+        opacity: 1;
+        z-index: 1;
+        pointer-events: all;
+      }
+
+      p {
+        padding: 5px 20px;
+        white-space: nowrap;
+        color: var(--white);
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 1px;
+          background-color: var(--orange);
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:after {
+          right: 5%;
+          bottom: 2px;
+        }
+
+        &:before {
+          left: 5%;
+          top: 2px;
+        }
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+
+          &:after {
+            width: 90%;
+          }
+
+          &:before {
+            width: 90%;
+          }
+        }
+
+        a {
+          color: var(--white);
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+    }
   }
 }

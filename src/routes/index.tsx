@@ -11,6 +11,7 @@ export const Paths = {
   ForgotPassword: '/forgot-password',
 
   User: '/user',
+  Admin: '/admin',
   Pigs: '/pigs',
   Accounting: '/accounting',
   Health: '/health',
@@ -30,9 +31,6 @@ export const Paths = {
 export const ROUTES = () => (
   <Routes>
     <Route path={Paths.Home} element={<Pages.Home />} />
-    <Route path={Paths.Login} element={<Pages.Auth />} />
-    <Route path={Paths.Register} element={<>Register</>} />
-    <Route path={Paths.ForgotPassword} element={<>ForgotPassword</>} />
     <Route path={Paths.User} element={<Pages.User />} />
     <Route path={Paths.Pigs} element={<Pages.Pig />} />
     <Route path={Paths.Accounting} element={<Pages.Accounting />} />
@@ -51,4 +49,11 @@ export const ROUTES = () => (
   </Routes>
 )
 
-export default ROUTES
+export const AuthROUTES = () => (
+  <Routes>
+    <Route path={Paths.Login} element={<Pages.Auth />} />
+    <Route path={Paths.Register} element={<Pages.Auth />} />
+    <Route path={Paths.ForgotPassword} element={<>ForgotPassword</>} />
+    <Route path="*" element={<Pages.Auth />} />
+  </Routes>
+)

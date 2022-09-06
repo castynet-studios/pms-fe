@@ -8,10 +8,8 @@ import styles from './auth.module.scss'
 function Auth() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.innerdiv}>
-        <Login />
-      </div>
-      <Signature marginTop="415px" />
+      <Login />
+      <Signature />
     </div>
   )
 }

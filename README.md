@@ -27,3 +27,4 @@ To start writing code create a new branch, name it based on the task eg. feature
 ### To Do
 
 1. Remove event comp if not reused
+2. Update permissions
