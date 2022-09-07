@@ -25,7 +25,6 @@ export const Auth = (): IAuthReturnType => {
   const isAuthPath = [
     Paths.Login,
     Paths.Register,
-    Paths.ForgotPassword,
   ].includes(currentPath)
 
   useEffect(() => {

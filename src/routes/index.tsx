@@ -45,21 +45,6 @@ export const AuthROUTES = () => (
   </Routes>
 )
 
-const Handler = () => (
-  <>
-    <Route path={Paths.AddRation} element={<Pages.AddRation />} />
-    <Route path={Paths.AddEvent} element={<Pages.AddEvent />} />
-    <Route path={Paths.AddTransaction} element={<Pages.AddTransaction />} />
-    <Route path={Paths.UpdateFeeding} element={<Pages.UpdateFeeding />} />
-  </>
-)
-
-const Vet = () => (
-  <>
-    <Route path={Paths.AddTreatment} element={<Pages.AddTreatment />} />
-  </>
-)
-
 export const ROUTES = () => (
   <Routes>
     <Route path={Paths.Home} element={<Pages.Home />} />
@@ -75,11 +60,26 @@ export const ROUTES = () => (
     <Route path={Paths.EditPig()} element={<Pages.AddPig />} />
     <Route path={Paths.SingleProduct()} element={<>SingleProduct</>} />
     <Route path={Paths.NotFound} element={<Pages.NotFound />} />
-    <Handler />
-    <Vet />
+    <Route path={Paths.AddRation} element={<Pages.AddRation />} />
+    <Route path={Paths.AddEvent} element={<Pages.AddEvent />} />
+    <Route path={Paths.AddTransaction} element={<Pages.AddTransaction />} />
+    <Route path={Paths.UpdateFeeding} element={<Pages.UpdateFeeding />} />
+    <Route path={Paths.AddTreatment} element={<Pages.AddTreatment />} />
     <Route path="*" element={<Pages.NotFound />} />
   </Routes>
 )
 
-export const HandlerROUTES = () => <Routes children={<Handler />} />
-export const VetROUTES = () => <Routes children={<Vet />} />
+export const HandlerROUTES = () => (
+  <Routes>
+    <Route path={Paths.AddRation} element={<Pages.AddRation />} />
+    <Route path={Paths.AddEvent} element={<Pages.AddEvent />} />
+    <Route path={Paths.AddTransaction} element={<Pages.AddTransaction />} />
+    <Route path={Paths.UpdateFeeding} element={<Pages.UpdateFeeding />} />
+  </Routes>
+)
+
+export const VetROUTES = () => (
+  <Routes>
+    <Route path={Paths.AddTreatment} element={<Pages.AddTreatment />} />
+  </Routes>
+)
