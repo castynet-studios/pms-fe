@@ -30,7 +30,16 @@ export interface IAuthReturnType {
  * @public
  */
 export interface IContent {
+  email?: string | null
   displayName?: string | null
   phoneNumber?: string | null
   avatar?: string | null
+}
+
+export interface IPasswordConditions {
+  isValid: boolean
+  isLength: boolean
+  isUpper: boolean
+  isLower: boolean
+  isNumber: boolean
 }

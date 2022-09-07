@@ -19,6 +19,8 @@ const StateProvider: FC<Props> = ({ children }) => {
     signInWithGoogle,
     user,
     userRef,
+    signInWithEP,
+    signUpWithEP,
   } = Auth()
 
   return (
@@ -30,6 +32,8 @@ const StateProvider: FC<Props> = ({ children }) => {
         signInWithGoogle,
         user,
         userRef,
+        signInWithEP,
+        signUpWithEP,
       }}
     >
       {children}

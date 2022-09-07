@@ -1,9 +1,11 @@
+import { IPasswordConditions } from 'elements'
+
 export const validateEmail = (email: string) => {
   const re = /\S+@\S+\.\S+/
   return re.test(email)
 }
 
-export const validatePassword = (password: string) => {
+export const validatePassword = (password: string): IPasswordConditions => {
   const reLength = /^.{8,}$/
   const reUpper = /^(?=.*[A-Z])/
   const reLower = /^(?=.*[a-z])/

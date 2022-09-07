@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import { useNavigate } from 'react-router-dom'
 import { DocumentData, DocumentReference } from 'firebase/firestore'
 import { User } from 'firebase/auth'
 
@@ -21,6 +21,7 @@ export const Auth = (): IAuthReturnType => {
   const [authenticating, setAuthenticating] = useState(false)
   const [userRef, setUserRef] = useState<DocumentReference<DocumentData>>()
   const currentPath = useCurrentPath()
+  const navigate = useNavigate()
   const isAuthPath = [
     Paths.Login,
     Paths.Register,
@@ -40,9 +41,10 @@ export const Auth = (): IAuthReturnType => {
         setRawUser(user)
         getUser(user.uid)
         setIsLoggedIn(true)
+        if (isAuthPath) navigate(Paths.Home)
       }
     })
-  }, [auth, db, doc, getDoc, isAuthPath, onAuthStateChanged])
+  }, [auth, db, doc, getDoc, isAuthPath, onAuthStateChanged, navigate])
 
   // get the user data, if user is none existent, create one
   async function fetchUser(paramUser?: User) {
@@ -53,6 +55,7 @@ export const Auth = (): IAuthReturnType => {
         displayName: paramUser?.displayName,
         phoneNumber: paramUser?.phoneNumber,
         avatar: paramUser?.photoURL,
+        email: paramUser?.email,
       }
       AddUserToDb(content, doc(db, 'users', paramUser?.uid || ''))
     } else {

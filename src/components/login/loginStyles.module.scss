@@ -53,6 +53,15 @@
     padding: 5px 15px;
     margin: 5px;
     border: 1px solid var(--black);
+    transition: all 0.2s ease-in-out;
+
+    &.valid {
+      border: 2px solid var(--lightGreen);
+    }
+
+    &.invalid {
+      border: 2px solid var(--red);
+    }
   }
 
   .conditions {
@@ -60,6 +69,19 @@
 
     p {
       font-size: 15px;
+      transition: all 0.2s ease-in-out;
+
+      &.condition {
+        color: var(--grey);
+      }
+
+      &.valid {
+        color: var(--lightGreen);
+      }
+
+      &.invalid {
+        color: var(--red);
+      }
     }
   }
 }
