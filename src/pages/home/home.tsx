@@ -12,7 +12,7 @@ export default function Home() {
       <div className={styles.cardsWrapper}>
         <div className={styles.intro}>
           <h1>
-            <Greeting /> Max
+            <Greeting /> Stephen
           </h1>
           <div className={cn(styles.card, styles.pigCount)}>
             <p className={styles.pigs}>300</p>

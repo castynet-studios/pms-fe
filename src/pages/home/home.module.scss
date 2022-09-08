@@ -1,7 +1,14 @@
+@import 'elements/scss/_mobile.scss';
+
 .wrapper {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 20px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    margin: 20px 20px;
+  }
 
   .cardsWrapper {
     display: flex;
@@ -36,6 +43,14 @@
   .intro {
     display: grid;
     grid-template-columns: 3fr 1fr;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   .pigCount {
