@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import cn from 'classnames'
 
 import { Button, Icons } from 'elements'
@@ -25,7 +26,7 @@ export default function TopNav() {
         <div className={cn(styles.user, { [styles.active]: showProfile })}>
           <p onClick={() => logOut()}>Logout</p>
           <p>
-            <a href={Paths.User}>My Account</a>
+            <Link to={Paths.User}>My Account</Link>
           </p>
         </div>
       </div>

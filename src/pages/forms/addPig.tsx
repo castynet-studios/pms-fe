@@ -1,8 +1,8 @@
 import React from 'react'
 
-import styles from './addPig.module.scss'
+import styles from './styles.module.scss'
 
-const addNewPig = () => {
+export default function AddNewPig() {
   return (
     <div className={styles.wrapper}>
       <p className={styles.topper}>Add new Pig</p>
@@ -151,5 +151,3 @@ const addNewPig = () => {
     </div>
   )
 }
-
-export default addNewPig

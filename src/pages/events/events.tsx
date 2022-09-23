@@ -7,7 +7,7 @@ import { LinearCalender } from 'components'
 import styles from './events.module.scss'
 
 export default function Events() {
-  const date = new Date(2022, 0, 1)
+  const date = new Date(2023, 2, 2)
   const startDate = sub(date, { days: 5 })
   const endDate = add(date, { days: 7 })
 

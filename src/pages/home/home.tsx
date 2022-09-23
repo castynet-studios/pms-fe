@@ -1,18 +1,21 @@
 import React from 'react'
 import cn from 'classnames'
 
+import { useApp } from 'context'
 import { Greeting } from 'elements'
 import { Calender } from 'components'
 
 import styles from './home.module.scss'
 
 export default function Home() {
+  const { user } = useApp()
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.cardsWrapper}>
         <div className={styles.intro}>
           <h1>
-            <Greeting /> Max
+            <Greeting /> {user?.firstName}
           </h1>
           <div className={cn(styles.card, styles.pigCount)}>
             <p className={styles.pigs}>300</p>

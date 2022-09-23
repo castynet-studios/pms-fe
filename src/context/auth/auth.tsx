@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import { useNavigate } from 'react-router-dom'
 import { DocumentData, DocumentReference } from 'firebase/firestore'
 import { User } from 'firebase/auth'
 
@@ -8,6 +8,7 @@ import {
   IContent,
   useCurrentPath,
   TSignInWithEP,
+  getUserFirstName,
 } from 'elements'
 import { fba } from 'context/firebase'
 import { Paths } from 'routes'
@@ -21,17 +22,14 @@ export const Auth = (): IAuthReturnType => {
   const [authenticating, setAuthenticating] = useState(false)
   const [userRef, setUserRef] = useState<DocumentReference<DocumentData>>()
   const currentPath = useCurrentPath()
-  const isAuthPath = [
-    Paths.Login,
-    Paths.Register,
-    Paths.ForgotPassword,
-  ].includes(currentPath)
+  const navigate = useNavigate()
+  const isAuthPath = [Paths.Login, Paths.Register].includes(currentPath)
 
   useEffect(() => {
     const getUser = async (uid: string) => {
       const docSnap = await getDoc(doc(db, 'users', uid))
       const usr = docSnap.data()
-      setUser(usr as User)
+      setUser(getUserFirstName(usr as User))
     }
 
     onAuthStateChanged(auth, user => {
@@ -40,9 +38,10 @@ export const Auth = (): IAuthReturnType => {
         setRawUser(user)
         getUser(user.uid)
         setIsLoggedIn(true)
+        if (isAuthPath) navigate(Paths.Home)
       }
     })
-  }, [auth, db, doc, getDoc, isAuthPath, onAuthStateChanged])
+  }, [auth, db, doc, getDoc, isAuthPath, onAuthStateChanged, navigate])
 
   // get the user data, if user is none existent, create one
   async function fetchUser(paramUser?: User) {
@@ -53,11 +52,12 @@ export const Auth = (): IAuthReturnType => {
         displayName: paramUser?.displayName,
         phoneNumber: paramUser?.phoneNumber,
         avatar: paramUser?.photoURL,
+        email: paramUser?.email,
       }
       AddUserToDb(content, doc(db, 'users', paramUser?.uid || ''))
     } else {
       const usr = docSnap.data()
-      setUser(usr as User)
+      setUser(getUserFirstName(usr as User))
 
       // const Snap = await getDoc(doc(db, 'roles', paramUser?.uid || ''))
 

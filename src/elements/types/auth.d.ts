@@ -19,8 +19,8 @@ export interface IAuthReturnType {
   authenticating: boolean
   logOut: () => void
   signInWithGoogle: () => void
-  signInWithEP: ({ email, password }: TSignInWithEP) => void
-  signUpWithEP: ({ email, password }: TSignInWithEP) => void
+  signInWithEP: (props: TSignInWithEP) => void
+  signUpWithEP: (props: TSignInWithEP) => void
   user?: User
   userRef?: DocumentReference<DocumentData>
 }
@@ -30,7 +30,16 @@ export interface IAuthReturnType {
  * @public
  */
 export interface IContent {
+  email?: string | null
   displayName?: string | null
   phoneNumber?: string | null
   avatar?: string | null
+}
+
+export interface IPasswordConditions {
+  isValid: boolean
+  isLength: boolean
+  isUpper: boolean
+  isLower: boolean
+  isNumber: boolean
 }
