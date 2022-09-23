@@ -8,6 +8,7 @@ import {
   IContent,
   useCurrentPath,
   TSignInWithEP,
+  getUserFirstName,
 } from 'elements'
 import { fba } from 'context/firebase'
 import { Paths } from 'routes'
@@ -22,16 +23,13 @@ export const Auth = (): IAuthReturnType => {
   const [userRef, setUserRef] = useState<DocumentReference<DocumentData>>()
   const currentPath = useCurrentPath()
   const navigate = useNavigate()
-  const isAuthPath = [
-    Paths.Login,
-    Paths.Register,
-  ].includes(currentPath)
+  const isAuthPath = [Paths.Login, Paths.Register].includes(currentPath)
 
   useEffect(() => {
     const getUser = async (uid: string) => {
       const docSnap = await getDoc(doc(db, 'users', uid))
       const usr = docSnap.data()
-      setUser(usr as User)
+      setUser(getUserFirstName(usr as User))
     }
 
     onAuthStateChanged(auth, user => {
@@ -59,7 +57,7 @@ export const Auth = (): IAuthReturnType => {
       AddUserToDb(content, doc(db, 'users', paramUser?.uid || ''))
     } else {
       const usr = docSnap.data()
-      setUser(usr as User)
+      setUser(getUserFirstName(usr as User))
 
       // const Snap = await getDoc(doc(db, 'roles', paramUser?.uid || ''))
 

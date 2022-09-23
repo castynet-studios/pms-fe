@@ -11,5 +11,6 @@ export { default as Home } from './home/home'
 export { default as NotFound } from './404/404'
 export { default as Handler } from './handler/dashboard'
 export { default as Vet } from './vet/dashboard'
+export { default as Sly } from './sly/sly'
 
 export * from './forms'

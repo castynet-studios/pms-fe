@@ -4,6 +4,7 @@ import cn from 'classnames'
 
 import { Button, Icons, useCurrentPath, Signature } from 'elements'
 import { Paths } from 'routes'
+import { LogoWide } from 'components'
 
 import styles from './sideNav.module.scss'
 
@@ -66,16 +67,7 @@ export default function SideNav() {
     <div className={styles.sideNav}>
       <nav className={sidebar ? styles.sidebar : styles.close}>
         <header>
-          <div className={styles.imageText}>
-            <span className={styles.image}>
-              <img src="logo.jpeg" alt="logo" />
-            </span>
-
-            <div className={styles.text}>
-              <span className={styles.name1}>PIGGERY</span>
-              <span className={styles.name2}>MANAGEMENT</span>
-            </div>
-          </div>
+          <LogoWide />
 
           <ShowMenu {...{ setSidebar, sidebar }} />
         </header>

@@ -1,3 +1,4 @@
+export { default as LogoWide } from './sideNav/logoWide'
 export { default as SideNav } from 'components/sideNav/sideNav'
 export { default as TopNav } from 'components/topNav/topNav'
 export { default as RecurringAilments } from 'components/health/vaccinations'

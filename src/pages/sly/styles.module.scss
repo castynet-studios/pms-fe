@@ -1,0 +1,46 @@
+.wrapper {
+  position: absolute;
+  width: max-content;
+  max-width: calc(100% - 100px);
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+
+  h1 {
+    font-size: 100px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 2px;
+  z-index: 9999;
+  left: 30px;
+
+  img {
+    width: 40px;
+    border-radius: 6px;
+    border: 2px solid var(--white);
+  }
+
+  > div {
+    display: flex;
+
+    > div {
+      margin-left: 10px;
+      margin-top: 7px;
+
+      > span {
+        font-size: 20px;
+        color: var(--white);
+        font-weight: 600;
+        margin-left: 10px;
+      }
+    }
+  }
+}

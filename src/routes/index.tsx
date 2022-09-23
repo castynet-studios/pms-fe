@@ -65,21 +65,33 @@ export const ROUTES = () => (
     <Route path={Paths.AddTransaction} element={<Pages.AddTransaction />} />
     <Route path={Paths.UpdateFeeding} element={<Pages.UpdateFeeding />} />
     <Route path={Paths.AddTreatment} element={<Pages.AddTreatment />} />
+    <Route path={Paths.AddPig} element={<Pages.AddPig />} />
     <Route path="*" element={<Pages.NotFound />} />
   </Routes>
 )
 
 export const HandlerROUTES = () => (
   <Routes>
+    <Route path={Paths.Home} element={<Pages.Handler />} />
     <Route path={Paths.AddRation} element={<Pages.AddRation />} />
     <Route path={Paths.AddEvent} element={<Pages.AddEvent />} />
     <Route path={Paths.AddTransaction} element={<Pages.AddTransaction />} />
     <Route path={Paths.UpdateFeeding} element={<Pages.UpdateFeeding />} />
+    <Route path={Paths.AddPig} element={<Pages.AddPig />} />
+    <Route path="*" element={<Pages.NotFound />} />
   </Routes>
 )
 
 export const VetROUTES = () => (
   <Routes>
+    <Route path={Paths.Home} element={<Pages.Home />} />
     <Route path={Paths.AddTreatment} element={<Pages.AddTreatment />} />
+    <Route path="*" element={<Pages.NotFound />} />
+  </Routes>
+)
+
+export const SlyROUTES = () => (
+  <Routes>
+    <Route path="*" element={<Pages.Sly />} />
   </Routes>
 )
